@@ -1,0 +1,312 @@
+{
+  "record_id": "DISPLAY-0001",
+  "version": "0.1",
+  "title": "Hallway Memory Shelf",
+  "record_type": "Composite Display",
+  "status": "Human Review",
+  "identity": {
+    "description": "A fictional hallway shelf containing a framed photograph, a concert ticket, a handwritten card, a smooth river stone, and a sealed handwritten letter.",
+    "aliases": [
+      "The memory shelf"
+    ],
+    "category": "Composite household display",
+    "maker_or_creator": null,
+    "materials": [
+      "Wood",
+      "Paper",
+      "Glass",
+      "Stone"
+    ],
+    "distinguishing_features": "The display combines unrelated objects whose significance comes from their shared family context rather than from being a manufactured set."
+  },
+  "meaning": {
+    "why_kept": "The fictional Calder family maintains the shelf as a small physical timeline of relationships, trips, celebrations, and ordinary moments that became meaningful.",
+    "family_significance": "No single object tells the full story. The meaning comes from the relationships among the items and the memories they represent together.",
+    "associated_people": [
+      "Maya Calder",
+      "Jonah Calder"
+    ],
+    "associated_events": [
+      "1998 family lake trip",
+      "2012 concert",
+      "2024 house move"
+    ],
+    "intended_future": "Keep the display together while allowing individual components to receive their own records if their histories become detailed enough."
+  },
+  "provenance": {
+    "acquisition_method": "Assembled over time",
+    "source_or_giver": "Multiple fictional family sources",
+    "acquired_date": null,
+    "acquired_place": null,
+    "certainty": "High",
+    "summary": "The shelf was not acquired as one object. Its components entered the family at different times and were intentionally grouped after the 2024 house move."
+  },
+  "location_and_state": {
+    "current_area": "Hallway",
+    "exact_location": "Fictional Calder home, upper hallway wall shelf",
+    "lifecycle_state": "Displayed",
+    "condition": "Stable display; paper items are protected from direct sunlight",
+    "nested_in_or_displayed_with": [
+      "Framed lake photograph",
+      "2012 concert ticket",
+      "Handwritten birthday card",
+      "Smooth river stone",
+      "Sealed handwritten letter"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "CLM-001",
+      "statement": "The framed photograph was taken during a fictional Calder family lake trip in 1998.",
+      "claim_type": "Event",
+      "epistemic_state": "Known",
+      "confidence": 0.98,
+      "evidence_ids": [
+        "EVID-001"
+      ],
+      "notes": "The date and location are written on the back of the photograph."
+    },
+    {
+      "claim_id": "CLM-002",
+      "statement": "The concert ticket was kept because Maya and Jonah Calder attended the concert together.",
+      "claim_type": "Meaning",
+      "epistemic_state": "Reported",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "EVID-002"
+      ],
+      "notes": "Based on an attributed fictional family interview."
+    },
+    {
+      "claim_id": "CLM-003",
+      "statement": "The smooth river stone likely came from the 1998 lake trip.",
+      "claim_type": "Provenance",
+      "epistemic_state": "Inferred",
+      "confidence": 0.55,
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-003"
+      ],
+      "notes": "The stone has long been displayed beside the photograph, but no source directly confirms when or where it was collected."
+    },
+    {
+      "claim_id": "CLM-004",
+      "statement": "The contents of the sealed handwritten letter are intentionally not represented in the public record.",
+      "claim_type": "Other",
+      "epistemic_state": "Known",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "EVID-004"
+      ],
+      "notes": "The existence of the letter is public-demo information; its contents are private."
+    },
+    {
+      "claim_id": "CLM-005",
+      "statement": "The exact year when the river stone entered the family collection is unknown.",
+      "claim_type": "Provenance",
+      "epistemic_state": "Unknown",
+      "confidence": 1.0,
+      "evidence_ids": [],
+      "notes": "The record preserves the gap rather than assigning an estimated year."
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EVID-001",
+      "evidence_type": "Photo",
+      "source_name": "Fictional Calder lake photograph",
+      "captured_date": "1998-07-18",
+      "contributor": "Maya Calder",
+      "excerpt_or_observation": "Handwritten notation on the reverse identifies the lake trip and July 1998.",
+      "sha256": null,
+      "reliability": "Primary",
+      "privacy_class": "Public Demo"
+    },
+    {
+      "evidence_id": "EVID-002",
+      "evidence_type": "Interview",
+      "source_name": "Fictional interview with Maya Calder",
+      "captured_date": "2026-06-10",
+      "contributor": "Maya Calder",
+      "excerpt_or_observation": "Maya recalls keeping the ticket because the concert was one of the first major events she and Jonah attended together.",
+      "sha256": null,
+      "reliability": "Reported",
+      "privacy_class": "Public Demo"
+    },
+    {
+      "evidence_id": "EVID-003",
+      "evidence_type": "Physical Inspection",
+      "source_name": "Fictional hallway shelf inspection",
+      "captured_date": "2026-06-10",
+      "contributor": "Household archivist",
+      "excerpt_or_observation": "The river stone is displayed immediately beside the 1998 lake photograph; no label or date is attached to the stone.",
+      "sha256": null,
+      "reliability": "Primary",
+      "privacy_class": "Public Demo"
+    },
+    {
+      "evidence_id": "EVID-004",
+      "evidence_type": "Physical Inspection",
+      "source_name": "Fictional sealed letter inspection",
+      "captured_date": "2026-06-10",
+      "contributor": "Household archivist",
+      "excerpt_or_observation": "A sealed handwritten letter is present on the shelf. Its contents were not opened or transcribed.",
+      "sha256": null,
+      "reliability": "Primary",
+      "privacy_class": "Private Adults"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-001",
+      "relation_type": "CONTAINS",
+      "target": "Framed lake photograph",
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-003"
+      ],
+      "notes": "Visible component of the composite display."
+    },
+    {
+      "relationship_id": "REL-002",
+      "relation_type": "CONTAINS",
+      "target": "2012 concert ticket",
+      "evidence_ids": [
+        "EVID-002",
+        "EVID-003"
+      ],
+      "notes": "Visible component of the composite display."
+    },
+    {
+      "relationship_id": "REL-003",
+      "relation_type": "CONTAINS",
+      "target": "Smooth river stone",
+      "evidence_ids": [
+        "EVID-003"
+      ],
+      "notes": "Visible component with incomplete provenance."
+    },
+    {
+      "relationship_id": "REL-004",
+      "relation_type": "CONTAINS",
+      "target": "Sealed handwritten letter",
+      "evidence_ids": [
+        "EVID-004"
+      ],
+      "notes": "The object may be acknowledged while its contents remain private."
+    },
+    {
+      "relationship_id": "REL-005",
+      "relation_type": "ASSOCIATED_WITH_EVENT",
+      "target": "2024 house move",
+      "evidence_ids": [],
+      "notes": "The current grouping was assembled after the fictional household move."
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVT-001",
+      "date_or_range": "1998-07-18",
+      "event_type": "Photographed",
+      "description": "The lake photograph was created during the fictional Calder family trip.",
+      "before_state": null,
+      "after_state": "Photograph existed as a family artifact",
+      "evidence_ids": [
+        "EVID-001"
+      ],
+      "certainty": "High"
+    },
+    {
+      "event_id": "EVT-002",
+      "date_or_range": "2012",
+      "event_type": "Acquired",
+      "description": "The concert ticket entered the family's retained memorabilia.",
+      "before_state": null,
+      "after_state": "Ticket retained as memorabilia",
+      "evidence_ids": [
+        "EVID-002"
+      ],
+      "certainty": "Medium"
+    },
+    {
+      "event_id": "EVT-003",
+      "date_or_range": "2024",
+      "event_type": "Displayed",
+      "description": "Previously separate keepsakes were grouped into the current hallway memory shelf after a house move.",
+      "before_state": "Items stored or displayed separately",
+      "after_state": "Items presented as one composite display",
+      "evidence_ids": [
+        "EVID-003"
+      ],
+      "certainty": "High"
+    }
+  ],
+  "questions_and_answers": [
+    {
+      "qa_id": "QA-001",
+      "question": "Why are these unrelated objects displayed together?",
+      "answer": "The Calder family grouped them because each item represents a different part of shared family history. The shelf functions as a small physical timeline.",
+      "answer_mode": "Qualified",
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-002",
+        "EVID-003"
+      ],
+      "claim_ids": [
+        "CLM-001",
+        "CLM-002",
+        "CLM-003"
+      ],
+      "privacy_class": "Public Demo",
+      "status": "Approved"
+    },
+    {
+      "qa_id": "QA-002",
+      "question": "Did the river stone come from the 1998 lake trip?",
+      "answer": "Possibly, but the available evidence does not establish that. Its placement beside the lake photograph supports the association, while its exact provenance remains unknown.",
+      "answer_mode": "Qualified",
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-003"
+      ],
+      "claim_ids": [
+        "CLM-003",
+        "CLM-005"
+      ],
+      "privacy_class": "Public Demo",
+      "status": "Approved"
+    },
+    {
+      "qa_id": "QA-003",
+      "question": "What does the sealed letter say?",
+      "answer": "The letter's contents are private and are not represented in the public demonstration record.",
+      "answer_mode": "Private",
+      "evidence_ids": [
+        "EVID-004"
+      ],
+      "claim_ids": [
+        "CLM-004"
+      ],
+      "privacy_class": "Private Adults",
+      "status": "Restricted"
+    }
+  ],
+  "privacy": {
+    "privacy_class": "Public Demo",
+    "human_approval_required": true,
+    "child_sensitive": false,
+    "medical_related": false,
+    "financial_related": false,
+    "living_person_sensitive": false,
+    "redacted_topics": [
+      "Contents of sealed handwritten letter"
+    ]
+  },
+  "approval": {
+    "state": "Pending",
+    "approved_by": null,
+    "decision_id": null,
+    "approval_date": null,
+    "conditions": "Synthetic demonstration record only. The existence of the sealed letter may be shown, but its fictional contents are intentionally outside the public record."
+  }
+}
