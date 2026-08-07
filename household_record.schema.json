@@ -1,0 +1,707 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/household-record.schema.json",
+  "title": "Household Knowledge Record",
+  "description": "An evidence-aware record for a household object, composite display, grouped record, or collection.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "version",
+    "title",
+    "record_type",
+    "status",
+    "identity",
+    "meaning",
+    "provenance",
+    "location_and_state",
+    "claims",
+    "evidence",
+    "relationships",
+    "events",
+    "questions_and_answers",
+    "privacy",
+    "approval"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9-]*-[0-9]{4}$",
+      "description": "Stable identifier such as OBJ-0001 or COLLECTION-0001."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_type": {
+      "enum": [
+        "Object",
+        "Composite Display",
+        "Grouped Record",
+        "Collection"
+      ]
+    },
+    "status": {
+      "enum": [
+        "Draft",
+        "Evidence Gathering",
+        "Human Review",
+        "Approved",
+        "Restricted",
+        "Deprecated"
+      ]
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "category": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maker_or_creator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "materials": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "distinguishing_features": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "meaning": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "why_kept"
+      ],
+      "properties": {
+        "why_kept": {
+          "type": "string",
+          "minLength": 1
+        },
+        "family_significance": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "associated_people": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "associated_events": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "intended_future": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "certainty"
+      ],
+      "properties": {
+        "acquisition_method": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_or_giver": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "acquired_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "acquired_place": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "certainty": {
+          "enum": [
+            "High",
+            "Medium",
+            "Low",
+            "Unknown"
+          ]
+        },
+        "summary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "location_and_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lifecycle_state"
+      ],
+      "properties": {
+        "current_area": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "exact_location": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lifecycle_state": {
+          "enum": [
+            "Displayed",
+            "In Use",
+            "Stored",
+            "Archived",
+            "Transformed",
+            "Disposed",
+            "Unknown"
+          ]
+        },
+        "condition": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nested_in_or_displayed_with": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "default": []
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim"
+      },
+      "default": []
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      },
+      "default": []
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relationship"
+      },
+      "default": []
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/event"
+      },
+      "default": []
+    },
+    "questions_and_answers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/qa"
+      },
+      "default": []
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "privacy_class",
+        "human_approval_required"
+      ],
+      "properties": {
+        "privacy_class": {
+          "enum": [
+            "Household",
+            "Family",
+            "Private Adults",
+            "Restricted",
+            "Public Demo"
+          ]
+        },
+        "human_approval_required": {
+          "type": "boolean"
+        },
+        "child_sensitive": {
+          "type": "boolean",
+          "default": false
+        },
+        "medical_related": {
+          "type": "boolean",
+          "default": false
+        },
+        "financial_related": {
+          "type": "boolean",
+          "default": false
+        },
+        "living_person_sensitive": {
+          "type": "boolean",
+          "default": false
+        },
+        "redacted_topics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "default": []
+        }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "Not Submitted",
+            "Pending",
+            "Approved",
+            "Approved with Restrictions",
+            "Rejected",
+            "Superseded"
+          ]
+        },
+        "approved_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "decision_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approval_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "conditions": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim_id",
+        "statement",
+        "claim_type",
+        "epistemic_state",
+        "evidence_ids"
+      ],
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "pattern": "^CLM-[0-9]{3}$"
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_type": {
+          "enum": [
+            "Identity",
+            "Description",
+            "Provenance",
+            "Meaning",
+            "Location",
+            "Relationship",
+            "Event",
+            "Condition",
+            "Collection",
+            "Other"
+          ]
+        },
+        "epistemic_state": {
+          "enum": [
+            "Known",
+            "Reported",
+            "Inferred",
+            "Disputed",
+            "Unknown",
+            "Not Applicable"
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^EVID-[0-9]{3}$"
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id",
+        "evidence_type",
+        "source_name",
+        "reliability",
+        "privacy_class"
+      ],
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "pattern": "^EVID-[0-9]{3}$"
+        },
+        "evidence_type": {
+          "enum": [
+            "Photo",
+            "Document",
+            "Message",
+            "Interview",
+            "Receipt",
+            "Label",
+            "Physical Inspection",
+            "Database",
+            "Other"
+          ]
+        },
+        "source_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "captured_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "contributor": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "excerpt_or_observation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "reliability": {
+          "enum": [
+            "Primary",
+            "Secondary",
+            "Reported",
+            "Derived"
+          ]
+        },
+        "privacy_class": {
+          "enum": [
+            "Household",
+            "Family",
+            "Private Adults",
+            "Restricted",
+            "Public Demo"
+          ]
+        }
+      }
+    },
+    "relationship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relationship_id",
+        "relation_type",
+        "target"
+      ],
+      "properties": {
+        "relationship_id": {
+          "type": "string",
+          "pattern": "^REL-[0-9]{3}$"
+        },
+        "relation_type": {
+          "enum": [
+            "PART_OF",
+            "CONTAINS",
+            "MEMBER_OF",
+            "CREATED_BY",
+            "GIVEN_BY",
+            "ASSOCIATED_WITH_PERSON",
+            "ASSOCIATED_WITH_EVENT",
+            "DISPLAYED_IN",
+            "STORED_IN",
+            "TRANSFORMED_FROM",
+            "VERSION_OF",
+            "RELATED_TO"
+          ]
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^EVID-[0-9]{3}$"
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_id",
+        "event_type",
+        "description",
+        "certainty"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "pattern": "^EVT-[0-9]{3}$"
+        },
+        "date_or_range": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "event_type": {
+          "enum": [
+            "Created",
+            "Acquired",
+            "Gifted",
+            "Moved",
+            "Displayed",
+            "Stored",
+            "Repaired",
+            "Transformed",
+            "Inherited",
+            "Loaned",
+            "Photographed",
+            "Recorded",
+            "Other"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "before_state": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "after_state": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^EVID-[0-9]{3}$"
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "certainty": {
+          "enum": [
+            "High",
+            "Medium",
+            "Low",
+            "Unknown"
+          ]
+        }
+      }
+    },
+    "qa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "qa_id",
+        "question",
+        "answer_mode",
+        "privacy_class",
+        "status"
+      ],
+      "properties": {
+        "qa_id": {
+          "type": "string",
+          "pattern": "^QA-[0-9]{3}$"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "answer_mode": {
+          "enum": [
+            "Direct",
+            "Qualified",
+            "Unknown",
+            "Private",
+            "Needs Human"
+          ]
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^EVID-[0-9]{3}$"
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^CLM-[0-9]{3}$"
+          },
+          "uniqueItems": true,
+          "default": []
+        },
+        "privacy_class": {
+          "enum": [
+            "Household",
+            "Family",
+            "Private Adults",
+            "Restricted",
+            "Public Demo"
+          ]
+        },
+        "status": {
+          "enum": [
+            "Draft",
+            "Needs Review",
+            "Approved",
+            "Restricted",
+            "Rejected"
+          ]
+        }
+      }
+    }
+  }
+}
