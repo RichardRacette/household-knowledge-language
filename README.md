@@ -65,6 +65,74 @@ The repository currently contains:
 - `requirements.txt` — Python dependency definition
 - `.github/workflows/validate.yml` — automatically runs validation on every change
 
+## Example records
+
+The repository includes three fictional records designed to test different kinds of household knowledge.
+
+### 1. Blue Ceramic Bird
+
+`ceramic_bird.json`
+
+A single sentimental object with incomplete provenance.
+
+It demonstrates:
+
+- Known information supported by photographic evidence
+- Reported family memory
+- An explicitly unknown acquisition date
+- Provenance and family meaning
+- Evidence-linked questions and answers
+
+### 2. Hallway Memory Shelf
+
+`composite_memory_shelf.json`
+
+A composite display made from several unrelated objects whose meaning comes from being displayed together.
+
+It demonstrates:
+
+- Nested household objects
+- Mixed provenance
+- Typed relationships
+- Known, reported, inferred, and unknown claims
+- Change over time
+- Privacy boundaries within a public record
+
+For example, the record may acknowledge that a sealed letter exists while refusing to expose its contents.
+
+### 3. Annual Family Ornament Collection
+
+`annual_ornament_collection.json`
+
+A collection intended to contain one commemorative ornament for every year.
+
+It demonstrates:
+
+- Collection membership rules
+- Year-by-year accumulation
+- Seasonal storage and display
+- Historical events
+- Missing members
+- Unresolved provenance
+
+The collection currently has no confirmed 2017 ornament. The model distinguishes:
+
+> No 2017 ornament is currently present.
+
+from:
+
+> A 2017 ornament never existed.
+
+The first statement is supported by the inventory. The second is not known.
+
+## What the three examples test
+
+Together, the examples show that the same record language can represent:
+
+**Object → Composite Display → Collection**
+
+while preserving evidence, uncertainty, relationships, history, privacy, and human authority.
+
 ## Quick start
 
 Install the validator dependency:
