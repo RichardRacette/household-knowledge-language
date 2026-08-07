@@ -30,5 +30,7 @@ jobs:
       - name: Run validation tests
         run: python -m unittest -v test_validate_record.py
 
-      - name: Validate fictional example
-        run: python validate_record.py ceramic_bird.json
+      - name: Validate fictional examples
+        run: |
+          python validate_record.py ceramic_bird.json
+          python validate_record.py composite_memory_shelf.json
