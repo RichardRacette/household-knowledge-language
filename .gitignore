@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# Environment variables and credentials
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build and package outputs
+build/
+dist/
+*.egg-info/
+*.log
+*.tmp
+
+# Private household information
+private/
+family-data/
+real-records/
+family-records/
+evidence/
+photos/
+attachments/
+
+# Private source-recovery material
+exports/
+chatgpt-export/
+source-recovery/
+source-review/
+human-review-queue/
+
+# Internal project governance
+project-control-center/
+internal/
+audit-logs/
+working-notes/
+
+# Internal artifact packages
+*.zip
+Racette_House_*
+HKL_*
