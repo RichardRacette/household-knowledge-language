@@ -140,6 +140,16 @@ Install the validator dependency:
 ```bash
 pip install -r requirements.txt
 
+## Documentation
+
+The public proof of concept includes three short design documents:
+
+- [Concept](docs/concept.md) — why household knowledge needs more than a traditional inventory
+- [Evidence and Uncertainty](docs/evidence-and-uncertainty.md) — how HKL distinguishes known, reported, inferred, disputed, and unknown information
+- [Architecture](docs/architecture.md) — how records, claims, evidence, relationships, events, privacy, validation, and automated testing fit together
+
+These documents describe the public model only. They do not contain real household records or private family information.
+
 ## Project status
 
 This repository is an early public proof of concept.
