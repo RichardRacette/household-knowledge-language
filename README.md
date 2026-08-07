@@ -52,6 +52,26 @@ It may not independently declare family truth, reduce privacy restrictions, or a
 
 Approval remains a human decision.
 
+## How it works
+
+A Household Knowledge Language record connects structured household information with evidence, uncertainty, relationships, change over time, privacy, and human authority.
+
+The repository currently contains:
+
+- `household_record.schema.json` — the generalized record model
+- `ceramic_bird.json` — a fully fictional example record
+- `validate_record.py` — validates a record against the schema
+- `test_validate_record.py` — regression tests for core model rules
+- `requirements.txt` — Python dependency definition
+- `.github/workflows/validate.yml` — automatically runs validation on every change
+
+## Quick start
+
+Install the validator dependency:
+
+```bash
+pip install -r requirements.txt
+
 ## Project status
 
 This repository is an early public proof of concept.
