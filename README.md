@@ -1,0 +1,67 @@
+# Household Knowledge Language
+
+Household Knowledge Language is an evidence-aware data model for preserving not only what a household owns, but why it matters, where it came from, how it changed, who is connected to it, and how confidently each part of the story is known.
+
+Traditional household inventories answer:
+
+> What is this, and where is it?
+
+Household Knowledge Language is designed to answer:
+
+> Why does this matter?  
+> Who gave it to us?  
+> What changed over time?  
+> What evidence supports the story?  
+> What remains disputed or unknown?  
+> Who is permitted to see the answer?
+
+## The problem
+
+A household contains more than objects. It contains gifts, inheritances, collections, family traditions, photographs, documents, memories, and ordinary items that became meaningful through use.
+
+Most inventory systems preserve the object while losing the story.
+
+This project explores how structured records can preserve:
+
+- Identity and description
+- Provenance and family meaning
+- Current and historical location
+- Relationships among people, objects, events, and collections
+- Change over time
+- Evidence supporting each claim
+- Explicit uncertainty
+- Privacy and human authority
+
+## Evidence and uncertainty
+
+The model distinguishes among:
+
+- **Known** — supported as established within the record
+- **Reported** — attributed to a person or source
+- **Inferred** — derived from available evidence
+- **Disputed** — materially conflicting accounts remain
+- **Unknown** — the information is not currently known
+
+Unknown is a valid result. The system should not invent a clean story merely because information is missing.
+
+## Human authority
+
+Software may organize evidence, identify conflicts, and help retrieve information.
+
+It may not independently declare family truth, reduce privacy restrictions, or approve a family record.
+
+Approval remains a human decision.
+
+## Project status
+
+This repository is an early public proof of concept.
+
+The first public release will include:
+
+- A generalized household-record JSON Schema
+- A Python validator
+- Fictional example records
+- Governance and privacy tests
+- Documentation of evidence and uncertainty
+
+This repository will not contain real family records, private evidence, ChatGPT exports, medical information, financial information, or internal project-management files.
