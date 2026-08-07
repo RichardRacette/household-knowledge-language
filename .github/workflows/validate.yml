@@ -34,3 +34,4 @@ jobs:
         run: |
           python validate_record.py ceramic_bird.json
           python validate_record.py composite_memory_shelf.json
+          python validate_record.py annual_ornament_collection.json
