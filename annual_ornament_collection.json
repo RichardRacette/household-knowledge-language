@@ -1,0 +1,367 @@
+{
+  "record_id": "COLLECTION-0001",
+  "version": "0.1",
+  "title": "Annual Family Ornament Collection",
+  "record_type": "Collection",
+  "status": "Human Review",
+  "identity": {
+    "description": "A fictional family collection of one commemorative holiday ornament for each year, with ornaments normally stored together and temporarily displayed during the winter season.",
+    "aliases": [
+      "The annual ornaments",
+      "Year-by-year tree ornaments"
+    ],
+    "category": "Seasonal family collection",
+    "maker_or_creator": null,
+    "materials": [
+      "Glass",
+      "Metal",
+      "Wood",
+      "Ceramic",
+      "Paper"
+    ],
+    "distinguishing_features": "Each ornament is associated with a specific calendar year and is intended to represent a memorable event, place, person, or family milestone from that year."
+  },
+  "meaning": {
+    "why_kept": "The fictional Hartwell family keeps the collection because decorating with the ornaments creates a recurring ritual of remembering earlier years together.",
+    "family_significance": "The collection functions as a year-by-year family timeline. Individual ornaments may be ordinary objects, but their ordered membership gives the collection historical meaning.",
+    "associated_people": [
+      "Nora Hartwell",
+      "Eli Hartwell"
+    ],
+    "associated_events": [
+      "Annual winter decorating tradition",
+      "2014 first-home holiday season",
+      "2021 family road trip",
+      "2024 house move"
+    ],
+    "intended_future": "Continue adding one ornament per year while preserving missing years, replacements, and uncertain membership rather than silently rewriting the sequence."
+  },
+  "provenance": {
+    "acquisition_method": "Accumulated annually",
+    "source_or_giver": "Multiple fictional family purchases and gifts",
+    "acquired_date": null,
+    "acquired_place": null,
+    "certainty": "High",
+    "summary": "The collection grew through annual purchases and gifts. Some ornaments have clear receipts or labels; others are known only through photographs, family recollection, or their year markings."
+  },
+  "location_and_state": {
+    "current_area": "Seasonal storage",
+    "exact_location": "Fictional Hartwell home, labeled ornament storage bin in upstairs closet",
+    "lifecycle_state": "Stored",
+    "condition": "Mixed; most ornaments are intact, with several showing ordinary wear",
+    "nested_in_or_displayed_with": [
+      "Labeled ornament storage bin",
+      "Winter tree during seasonal display",
+      "Mantel display for fragile ornaments"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "CLM-001",
+      "statement": "The Hartwell collection is intended to contain one commemorative ornament for each calendar year.",
+      "claim_type": "Collection",
+      "epistemic_state": "Known",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-002"
+      ],
+      "notes": "The annual inclusion rule is explicitly described by the fictional household."
+    },
+    {
+      "claim_id": "CLM-002",
+      "statement": "The 2014 ornament represents the family's first holiday season in their first home.",
+      "claim_type": "Meaning",
+      "epistemic_state": "Known",
+      "confidence": 0.95,
+      "evidence_ids": [
+        "EVID-003"
+      ],
+      "notes": "The ornament is marked 2014 and appears in a dated photograph from that home."
+    },
+    {
+      "claim_id": "CLM-003",
+      "statement": "No 2017 ornament is currently present in the inventoried collection.",
+      "claim_type": "Collection",
+      "epistemic_state": "Known",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "EVID-001"
+      ],
+      "notes": "The current physical inventory contains no ornament assigned to 2017."
+    },
+    {
+      "claim_id": "CLM-004",
+      "statement": "A 2017 ornament was probably purchased and later misplaced.",
+      "claim_type": "Provenance",
+      "epistemic_state": "Reported",
+      "confidence": 0.5,
+      "evidence_ids": [
+        "EVID-004"
+      ],
+      "notes": "One family member recalls a 2017 ornament, but no photograph, receipt, or object has been located."
+    },
+    {
+      "claim_id": "CLM-005",
+      "statement": "It is unknown whether the 2017 gap means the ornament was never acquired or was later lost.",
+      "claim_type": "Collection",
+      "epistemic_state": "Unknown",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-004"
+      ],
+      "notes": "The collection preserves the gap without selecting a preferred explanation."
+    },
+    {
+      "claim_id": "CLM-006",
+      "statement": "Most ornaments are stored together outside the holiday season and displayed temporarily each winter.",
+      "claim_type": "Location",
+      "epistemic_state": "Known",
+      "confidence": 0.98,
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-002"
+      ],
+      "notes": "The collection has a recurring seasonal state change."
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EVID-001",
+      "evidence_type": "Physical Inspection",
+      "source_name": "Fictional annual ornament inventory",
+      "captured_date": "2026-07-05",
+      "contributor": "Household archivist",
+      "excerpt_or_observation": "The storage bin contains ornaments labeled for 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023, 2024, and 2025. No ornament labeled 2017 was found.",
+      "sha256": null,
+      "reliability": "Primary",
+      "privacy_class": "Public Demo"
+    },
+    {
+      "evidence_id": "EVID-002",
+      "evidence_type": "Label",
+      "source_name": "Fictional storage-bin label",
+      "captured_date": "2026-07-05",
+      "contributor": "Household archivist",
+      "excerpt_or_observation": "Bin label reads: Annual Ornaments \u2014 one for every year.",
+      "sha256": null,
+      "reliability": "Primary",
+      "privacy_class": "Public Demo"
+    },
+    {
+      "evidence_id": "EVID-003",
+      "evidence_type": "Photo",
+      "source_name": "Fictional 2014 holiday photograph",
+      "captured_date": "2014-12-20",
+      "contributor": "Nora Hartwell",
+      "excerpt_or_observation": "The 2014 ornament is visible on the tree in the family's first home, with the year marking legible.",
+      "sha256": null,
+      "reliability": "Primary",
+      "privacy_class": "Public Demo"
+    },
+    {
+      "evidence_id": "EVID-004",
+      "evidence_type": "Interview",
+      "source_name": "Fictional interview with Eli Hartwell",
+      "captured_date": "2026-07-05",
+      "contributor": "Eli Hartwell",
+      "excerpt_or_observation": "Eli recalls buying an ornament in 2017 but cannot remember what it looked like or where it went.",
+      "sha256": null,
+      "reliability": "Reported",
+      "privacy_class": "Public Demo"
+    },
+    {
+      "evidence_id": "EVID-005",
+      "evidence_type": "Photo",
+      "source_name": "Fictional 2025 winter tree photograph",
+      "captured_date": "2025-12-18",
+      "contributor": "Nora Hartwell",
+      "excerpt_or_observation": "Multiple annual ornaments are visible together on the family's winter tree during seasonal display.",
+      "sha256": null,
+      "reliability": "Primary",
+      "privacy_class": "Public Demo"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-001",
+      "relation_type": "CONTAINS",
+      "target": "2014 first-home ornament",
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-003"
+      ],
+      "notes": "Confirmed collection member."
+    },
+    {
+      "relationship_id": "REL-002",
+      "relation_type": "CONTAINS",
+      "target": "2021 road-trip ornament",
+      "evidence_ids": [
+        "EVID-001"
+      ],
+      "notes": "Confirmed collection member."
+    },
+    {
+      "relationship_id": "REL-003",
+      "relation_type": "STORED_IN",
+      "target": "Labeled annual ornament storage bin",
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-002"
+      ],
+      "notes": "Primary off-season location."
+    },
+    {
+      "relationship_id": "REL-004",
+      "relation_type": "DISPLAYED_IN",
+      "target": "Winter tree",
+      "evidence_ids": [
+        "EVID-005"
+      ],
+      "notes": "Recurring seasonal display location."
+    },
+    {
+      "relationship_id": "REL-005",
+      "relation_type": "RELATED_TO",
+      "target": "2017 unresolved collection gap",
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-004"
+      ],
+      "notes": "Represents an intentionally unresolved missing-year question."
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVT-001",
+      "date_or_range": "2014",
+      "event_type": "Acquired",
+      "description": "The first-home ornament entered the annual collection.",
+      "before_state": null,
+      "after_state": "2014 represented in the collection",
+      "evidence_ids": [
+        "EVID-003"
+      ],
+      "certainty": "High"
+    },
+    {
+      "event_id": "EVT-002",
+      "date_or_range": "2017",
+      "event_type": "Other",
+      "description": "The annual sequence contains an unresolved gap for 2017.",
+      "before_state": "2016 represented",
+      "after_state": "2017 unresolved; 2018 represented",
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-004"
+      ],
+      "certainty": "High"
+    },
+    {
+      "event_id": "EVT-003",
+      "date_or_range": "2024",
+      "event_type": "Moved",
+      "description": "The collection moved to a newly labeled storage bin after the fictional family house move.",
+      "before_state": "Stored in several smaller boxes",
+      "after_state": "Stored together in one labeled annual-ornament bin",
+      "evidence_ids": [
+        "EVID-002"
+      ],
+      "certainty": "Medium"
+    },
+    {
+      "event_id": "EVT-004",
+      "date_or_range": "Each winter",
+      "event_type": "Displayed",
+      "description": "The collection transitions from off-season storage to temporary seasonal display.",
+      "before_state": "Stored",
+      "after_state": "Displayed on the winter tree and mantel",
+      "evidence_ids": [
+        "EVID-005"
+      ],
+      "certainty": "High"
+    }
+  ],
+  "questions_and_answers": [
+    {
+      "qa_id": "QA-001",
+      "question": "What is the rule for belonging to this collection?",
+      "answer": "The Hartwell family intends the collection to contain one commemorative ornament for each calendar year.",
+      "answer_mode": "Direct",
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-002"
+      ],
+      "claim_ids": [
+        "CLM-001"
+      ],
+      "privacy_class": "Public Demo",
+      "status": "Approved"
+    },
+    {
+      "qa_id": "QA-002",
+      "question": "Which year is missing?",
+      "answer": "No 2017 ornament is currently present. The available evidence does not establish whether one was never acquired or was later lost.",
+      "answer_mode": "Unknown",
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-004"
+      ],
+      "claim_ids": [
+        "CLM-003",
+        "CLM-004",
+        "CLM-005"
+      ],
+      "privacy_class": "Public Demo",
+      "status": "Approved"
+    },
+    {
+      "qa_id": "QA-003",
+      "question": "Where are the ornaments during the rest of the year?",
+      "answer": "Most are stored together in a labeled ornament bin in the upstairs closet, then moved to seasonal display each winter.",
+      "answer_mode": "Direct",
+      "evidence_ids": [
+        "EVID-001",
+        "EVID-002",
+        "EVID-005"
+      ],
+      "claim_ids": [
+        "CLM-006"
+      ],
+      "privacy_class": "Public Demo",
+      "status": "Approved"
+    },
+    {
+      "qa_id": "QA-004",
+      "question": "Why does the 2014 ornament matter?",
+      "answer": "It represents the family's first holiday season in their first home and is documented in a dated 2014 photograph.",
+      "answer_mode": "Direct",
+      "evidence_ids": [
+        "EVID-003"
+      ],
+      "claim_ids": [
+        "CLM-002"
+      ],
+      "privacy_class": "Public Demo",
+      "status": "Approved"
+    }
+  ],
+  "privacy": {
+    "privacy_class": "Public Demo",
+    "human_approval_required": true,
+    "child_sensitive": false,
+    "medical_related": false,
+    "financial_related": false,
+    "living_person_sensitive": false,
+    "redacted_topics": []
+  },
+  "approval": {
+    "state": "Pending",
+    "approved_by": null,
+    "decision_id": null,
+    "approval_date": null,
+    "conditions": "Synthetic demonstration record only."
+  }
+}
