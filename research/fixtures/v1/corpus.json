@@ -1,0 +1,1655 @@
+{
+  "version": "1",
+  "fictional": true,
+  "records": [
+    {
+      "record_id": "OBJ-0001",
+      "version": "0.1",
+      "title": "Blue Ceramic Bird",
+      "record_type": "Object",
+      "status": "Human Review",
+      "identity": {
+        "description": "A small glazed ceramic bird with a deep blue body and a white-speckled breast.",
+        "aliases": [
+          "Grandmother's blue bird"
+        ],
+        "category": "Decorative object",
+        "maker_or_creator": null,
+        "materials": [
+          "Glazed ceramic"
+        ],
+        "distinguishing_features": "A small chip beneath the left wing is visible only when the object is turned over."
+      },
+      "meaning": {
+        "why_kept": "The fictional Marlow family keeps the bird because it is associated with Elena Marlow's grandmother and has appeared in family homes for decades.",
+        "family_significance": "It is treated as a symbol of continuity between generations, although the details of its original acquisition remain incomplete.",
+        "associated_people": [
+          "Elena Marlow",
+          "Ruth Marlow"
+        ],
+        "associated_events": [
+          "Elena's first apartment"
+        ],
+        "intended_future": "Remain in the family and eventually pass to a younger relative."
+      },
+      "provenance": {
+        "acquisition_method": "Reported family gift",
+        "source_or_giver": "Reportedly Ruth Marlow",
+        "acquired_date": null,
+        "acquired_place": null,
+        "certainty": "Medium",
+        "summary": "Family members report that Ruth Marlow gave the bird to Elena. The exact year is unknown. A dated photograph confirms that Elena possessed it by 1991."
+      },
+      "location_and_state": {
+        "current_area": "Hallway",
+        "exact_location": "Top shelf of the fictional Marlow family display cabinet",
+        "lifecycle_state": "Displayed",
+        "condition": "Good, with one small chip beneath the left wing",
+        "nested_in_or_displayed_with": [
+          "Framed family photograph",
+          "Small brass key"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "The blue ceramic bird was displayed in Elena Marlow's first apartment by 1991.",
+          "claim_type": "Provenance",
+          "epistemic_state": "Known",
+          "confidence": 0.95,
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "notes": "Supported by a dated photograph."
+        },
+        {
+          "claim_id": "CLM-002",
+          "statement": "Ruth Marlow gave the bird to Elena Marlow.",
+          "claim_type": "Provenance",
+          "epistemic_state": "Reported",
+          "confidence": 0.65,
+          "evidence_ids": [
+            "EVID-002"
+          ],
+          "notes": "Attributed family account; no receipt or contemporaneous note has been found."
+        },
+        {
+          "claim_id": "CLM-003",
+          "statement": "The exact acquisition year is unknown.",
+          "claim_type": "Provenance",
+          "epistemic_state": "Unknown",
+          "confidence": 1.0,
+          "evidence_ids": [],
+          "notes": "The record intentionally preserves this gap."
+        },
+        {
+          "claim_id": "CLM-004",
+          "statement": "Elena remembers receiving the bird from Ruth.",
+          "claim_type": "Other",
+          "epistemic_state": "Reported",
+          "evidence_ids": [
+            "EVID-003"
+          ],
+          "confidence": 0.99
+        },
+        {
+          "claim_id": "CLM-005",
+          "statement": "The later summary repeats Elena’s gift account.",
+          "claim_type": "Other",
+          "epistemic_state": "Reported",
+          "evidence_ids": [
+            "EVID-004"
+          ],
+          "confidence": 1
+        },
+        {
+          "claim_id": "CLM-006",
+          "statement": "The bird stood in the hallway from 2020 until the 2024 move.",
+          "claim_type": "Location",
+          "epistemic_state": "Known",
+          "evidence_ids": [
+            "EVID-006"
+          ],
+          "confidence": null
+        },
+        {
+          "claim_id": "CLM-007",
+          "statement": "The bird moved to the study on May 1, 2024, according to the initial log.",
+          "claim_type": "Location",
+          "epistemic_state": "Known",
+          "evidence_ids": [
+            "EVID-007"
+          ],
+          "confidence": null
+        },
+        {
+          "claim_id": "CLM-008",
+          "statement": "The move log was corrected: the bird moved on May 3, 2024.",
+          "claim_type": "Location",
+          "epistemic_state": "Known",
+          "evidence_ids": [
+            "EVID-008"
+          ],
+          "confidence": null
+        },
+        {
+          "claim_id": "CLM-009",
+          "statement": "Leo later recalled the bird in the attic during 2023.",
+          "claim_type": "Location",
+          "epistemic_state": "Reported",
+          "evidence_ids": [
+            "EVID-009"
+          ],
+          "confidence": null
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Photo",
+          "source_name": "Fictional apartment photograph dated June 1991",
+          "captured_date": "1991-06-15",
+          "contributor": "Elena Marlow",
+          "excerpt_or_observation": "The blue ceramic bird is visible on a shelf behind Elena.",
+          "sha256": "b64dfed69c99964643573d4db30109b2a2e6ea89c3e4e92c3f3c3d18deb6ca74",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo"
+        },
+        {
+          "evidence_id": "EVID-002",
+          "evidence_type": "Interview",
+          "source_name": "Fictional family interview with Elena Marlow",
+          "captured_date": "2026-07-12",
+          "contributor": "Elena Marlow",
+          "excerpt_or_observation": "Elena recalls that her grandmother gave her the bird but does not remember the year.",
+          "sha256": "496a6a76847b71dc22b810bcabf2983c2552aba63e039c76d3a2aa656d82e6b7",
+          "reliability": "Reported",
+          "privacy_class": "Public Demo"
+        },
+        {
+          "evidence_id": "EVID-003",
+          "evidence_type": "Document",
+          "source_name": "Fictional Blue Ceramic Bird source EVID-003",
+          "captured_date": "2026-07-20",
+          "contributor": "Fictional curator",
+          "excerpt_or_observation": "A paraphrase of Elena: she remembers receiving the bird from Ruth.",
+          "reliability": "Derived",
+          "privacy_class": "Public Demo",
+          "sha256": "6d27aacb34fe1728e24767786fd91baabfb400be0e7c87c1440695012f88c5d7"
+        },
+        {
+          "evidence_id": "EVID-004",
+          "evidence_type": "Document",
+          "source_name": "Fictional Blue Ceramic Bird source EVID-004",
+          "captured_date": "2026-08-20",
+          "contributor": "Fictional curator",
+          "excerpt_or_observation": "A later summary repeats the earlier paraphrase about a gift from Ruth.",
+          "reliability": "Derived",
+          "privacy_class": "Public Demo",
+          "sha256": "762d4e89f0628558ddc820699c0b0121e5e239fe1a06e878e8c235fae54f04fe"
+        },
+        {
+          "evidence_id": "EVID-006",
+          "evidence_type": "Document",
+          "source_name": "Fictional Blue Ceramic Bird source EVID-006",
+          "captured_date": "2024-05-02",
+          "contributor": "Fictional move-log curator",
+          "excerpt_or_observation": "The bird stood in the hallway from 2020 until the 2024 move.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "25af916801713c1ccb2ac51fd552a6aa0a2d0e74215619764563bac8f5ca87b3"
+        },
+        {
+          "evidence_id": "EVID-007",
+          "evidence_type": "Document",
+          "source_name": "Fictional Blue Ceramic Bird source EVID-007",
+          "captured_date": "2024-05-02",
+          "contributor": "Fictional move-log curator",
+          "excerpt_or_observation": "The bird moved to the study on May 1, 2024, according to the initial log.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "2af7b2c3b1f8eff36a6ddb67ef0e7fe87e0e12003661a375201b258918420fe1"
+        },
+        {
+          "evidence_id": "EVID-008",
+          "evidence_type": "Document",
+          "source_name": "Fictional Blue Ceramic Bird source EVID-008",
+          "captured_date": "2026-08-01",
+          "contributor": "Fictional move-log curator",
+          "excerpt_or_observation": "The move log was corrected: the bird moved on May 3, 2024.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "d559620b2c540b4d51657bed012a91b69a46575d0fda0d36b2d167da4f391ca1"
+        },
+        {
+          "evidence_id": "EVID-009",
+          "evidence_type": "Document",
+          "source_name": "Fictional Blue Ceramic Bird source EVID-009",
+          "captured_date": "2026-08-02",
+          "contributor": "Leo Marlow",
+          "excerpt_or_observation": "Leo later recalled the bird in the attic during 2023.",
+          "reliability": "Reported",
+          "privacy_class": "Public Demo",
+          "sha256": "9c12c147a4a50eb289919453ad4787252dd192be49f15699747eeb61783c7668"
+        }
+      ],
+      "relationships": [
+        {
+          "relationship_id": "REL-001",
+          "relation_type": "GIVEN_BY",
+          "target": "Ruth Marlow",
+          "evidence_ids": [
+            "EVID-002"
+          ],
+          "notes": "Reported relationship, not independently verified."
+        },
+        {
+          "relationship_id": "REL-002",
+          "relation_type": "DISPLAYED_IN",
+          "target": "Fictional Marlow hallway display cabinet",
+          "evidence_ids": [],
+          "notes": "Current demonstration location."
+        }
+      ],
+      "events": [
+        {
+          "event_id": "EVT-001",
+          "date_or_range": "By June 1991",
+          "event_type": "Displayed",
+          "description": "The bird was photographed in Elena Marlow's first apartment.",
+          "before_state": null,
+          "after_state": "Displayed in Elena's apartment",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "certainty": "High"
+        }
+      ],
+      "questions_and_answers": [
+        {
+          "qa_id": "QA-001",
+          "question": "Why does the family keep the blue ceramic bird?",
+          "answer": "The family keeps it because it is associated with Elena's grandmother and has remained part of the family's homes for decades.",
+          "answer_mode": "Qualified",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-002"
+          ],
+          "claim_ids": [
+            "CLM-001",
+            "CLM-002"
+          ],
+          "privacy_class": "Public Demo",
+          "status": "Approved"
+        },
+        {
+          "qa_id": "QA-002",
+          "question": "When did the family acquire it?",
+          "answer": "The exact acquisition year is unknown. A photograph confirms that Elena had it by June 1991.",
+          "answer_mode": "Unknown",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "claim_ids": [
+            "CLM-001",
+            "CLM-003"
+          ],
+          "privacy_class": "Public Demo",
+          "status": "Approved"
+        }
+      ],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true,
+        "child_sensitive": false,
+        "medical_related": false,
+        "financial_related": false,
+        "living_person_sensitive": false,
+        "redacted_topics": []
+      },
+      "approval": {
+        "state": "Pending",
+        "approved_by": null,
+        "decision_id": null,
+        "approval_date": null,
+        "conditions": "Synthetic demonstration record only."
+      }
+    },
+    {
+      "record_id": "DISPLAY-0001",
+      "version": "0.1",
+      "title": "Hallway Memory Shelf",
+      "record_type": "Composite Display",
+      "status": "Human Review",
+      "identity": {
+        "description": "A fictional hallway shelf containing a framed photograph, a concert ticket, a handwritten card, a smooth river stone, and a sealed handwritten letter.",
+        "aliases": [
+          "The memory shelf"
+        ],
+        "category": "Composite household display",
+        "maker_or_creator": null,
+        "materials": [
+          "Wood",
+          "Paper",
+          "Glass",
+          "Stone"
+        ],
+        "distinguishing_features": "The display combines unrelated objects whose significance comes from their shared family context rather than from being a manufactured set."
+      },
+      "meaning": {
+        "why_kept": "The fictional Calder family maintains the shelf as a small physical timeline of relationships, trips, celebrations, and ordinary moments that became meaningful.",
+        "family_significance": "No single object tells the full story. The meaning comes from the relationships among the items and the memories they represent together.",
+        "associated_people": [
+          "Maya Calder",
+          "Jonah Calder"
+        ],
+        "associated_events": [
+          "1998 family lake trip",
+          "2012 concert",
+          "2024 house move"
+        ],
+        "intended_future": "Keep the display together while allowing individual components to receive their own records if their histories become detailed enough."
+      },
+      "provenance": {
+        "acquisition_method": "Assembled over time",
+        "source_or_giver": "Multiple fictional family sources",
+        "acquired_date": null,
+        "acquired_place": null,
+        "certainty": "High",
+        "summary": "The shelf was not acquired as one object. Its components entered the family at different times and were intentionally grouped after the 2024 house move."
+      },
+      "location_and_state": {
+        "current_area": "Hallway",
+        "exact_location": "Fictional Calder home, upper hallway wall shelf",
+        "lifecycle_state": "Displayed",
+        "condition": "Stable display; paper items are protected from direct sunlight",
+        "nested_in_or_displayed_with": [
+          "Framed lake photograph",
+          "2012 concert ticket",
+          "Handwritten birthday card",
+          "Smooth river stone",
+          "Sealed handwritten letter"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "The framed photograph was taken during a fictional Calder family lake trip in 1998.",
+          "claim_type": "Event",
+          "epistemic_state": "Known",
+          "confidence": 0.98,
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "notes": "The date and location are written on the back of the photograph."
+        },
+        {
+          "claim_id": "CLM-002",
+          "statement": "The concert ticket was kept because Maya and Jonah Calder attended the concert together.",
+          "claim_type": "Meaning",
+          "epistemic_state": "Reported",
+          "confidence": 0.9,
+          "evidence_ids": [
+            "EVID-002"
+          ],
+          "notes": "Based on an attributed fictional family interview."
+        },
+        {
+          "claim_id": "CLM-003",
+          "statement": "The smooth river stone likely came from the 1998 lake trip.",
+          "claim_type": "Provenance",
+          "epistemic_state": "Inferred",
+          "confidence": 0.55,
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-003"
+          ],
+          "notes": "The stone has long been displayed beside the photograph, but no source directly confirms when or where it was collected."
+        },
+        {
+          "claim_id": "CLM-004",
+          "statement": "The contents of the sealed handwritten letter are intentionally not represented in the public record.",
+          "claim_type": "Other",
+          "epistemic_state": "Known",
+          "confidence": 1.0,
+          "evidence_ids": [
+            "EVID-004"
+          ],
+          "notes": "The existence of the letter is public-demo information; its contents are private."
+        },
+        {
+          "claim_id": "CLM-005",
+          "statement": "The exact year when the river stone entered the family collection is unknown.",
+          "claim_type": "Provenance",
+          "epistemic_state": "Unknown",
+          "confidence": 1.0,
+          "evidence_ids": [],
+          "notes": "The record preserves the gap rather than assigning an estimated year."
+        },
+        {
+          "claim_id": "CLM-006",
+          "statement": "SYNTHETIC-DERIVED-ORCHID-482 is a derived summary.",
+          "claim_type": "Other",
+          "epistemic_state": "Reported",
+          "evidence_ids": [
+            "EVID-005"
+          ],
+          "confidence": null
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Photo",
+          "source_name": "Fictional Calder lake photograph",
+          "captured_date": "1998-07-18",
+          "contributor": "Maya Calder",
+          "excerpt_or_observation": "Handwritten notation on the reverse identifies the lake trip and July 1998.",
+          "sha256": "4190d7391c20b9aa0294cb1350dea45143913957bcefd62fb2edfdbdaa6a4e4e",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo"
+        },
+        {
+          "evidence_id": "EVID-002",
+          "evidence_type": "Interview",
+          "source_name": "Fictional interview with Maya Calder",
+          "captured_date": "2026-06-10",
+          "contributor": "Maya Calder",
+          "excerpt_or_observation": "Maya recalls keeping the ticket because the concert was one of the first major events she and Jonah attended together.",
+          "sha256": "ed0ee7571b3db98ef5a8e4412a498b52d2766bd173336b4e4b888c2bb28efa7b",
+          "reliability": "Reported",
+          "privacy_class": "Public Demo"
+        },
+        {
+          "evidence_id": "EVID-003",
+          "evidence_type": "Physical Inspection",
+          "source_name": "Fictional hallway shelf inspection",
+          "captured_date": "2026-06-10",
+          "contributor": "Household archivist",
+          "excerpt_or_observation": "The river stone is displayed immediately beside the 1998 lake photograph; no label or date is attached to the stone.",
+          "sha256": "6052a55ea594efca180d38518e3c37e8df1c0cfde39a6170a52cebf731977d54",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo"
+        },
+        {
+          "evidence_id": "EVID-004",
+          "evidence_type": "Physical Inspection",
+          "source_name": "Fictional sealed letter inspection",
+          "captured_date": "2026-06-10",
+          "contributor": "Household archivist",
+          "excerpt_or_observation": "A sealed handwritten letter is present on the shelf. Its contents were not opened or transcribed.",
+          "sha256": "ca67381481e8e07f7a55b68a28f0840de42507eed417915bfbac30a6aae5ede3",
+          "reliability": "Primary",
+          "privacy_class": "Private Adults"
+        },
+        {
+          "evidence_id": "EVID-005",
+          "evidence_type": "Document",
+          "source_name": "Fictional Hallway Memory Shelf source EVID-005",
+          "captured_date": "2026-07-20",
+          "contributor": "Fictional curator",
+          "excerpt_or_observation": "SYNTHETIC-DERIVED-ORCHID-482: a summary of the fictional sealed letter.",
+          "reliability": "Derived",
+          "privacy_class": "Public Demo",
+          "sha256": "cfecb08b81596ef372f095d58f0af6e0a670e0b852d29013443dc7c1f5bc5c29"
+        }
+      ],
+      "relationships": [
+        {
+          "relationship_id": "REL-001",
+          "relation_type": "CONTAINS",
+          "target": "Framed lake photograph",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-003"
+          ],
+          "notes": "Visible component of the composite display."
+        },
+        {
+          "relationship_id": "REL-002",
+          "relation_type": "CONTAINS",
+          "target": "2012 concert ticket",
+          "evidence_ids": [
+            "EVID-002",
+            "EVID-003"
+          ],
+          "notes": "Visible component of the composite display."
+        },
+        {
+          "relationship_id": "REL-003",
+          "relation_type": "CONTAINS",
+          "target": "Smooth river stone",
+          "evidence_ids": [
+            "EVID-003"
+          ],
+          "notes": "Visible component with incomplete provenance."
+        },
+        {
+          "relationship_id": "REL-004",
+          "relation_type": "CONTAINS",
+          "target": "Sealed handwritten letter",
+          "evidence_ids": [
+            "EVID-004"
+          ],
+          "notes": "The object may be acknowledged while its contents remain private."
+        },
+        {
+          "relationship_id": "REL-005",
+          "relation_type": "ASSOCIATED_WITH_EVENT",
+          "target": "2024 house move",
+          "evidence_ids": [],
+          "notes": "The current grouping was assembled after the fictional household move."
+        }
+      ],
+      "events": [
+        {
+          "event_id": "EVT-001",
+          "date_or_range": "1998-07-18",
+          "event_type": "Photographed",
+          "description": "The lake photograph was created during the fictional Calder family trip.",
+          "before_state": null,
+          "after_state": "Photograph existed as a family artifact",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "certainty": "High"
+        },
+        {
+          "event_id": "EVT-002",
+          "date_or_range": "2012",
+          "event_type": "Acquired",
+          "description": "The concert ticket entered the family's retained memorabilia.",
+          "before_state": null,
+          "after_state": "Ticket retained as memorabilia",
+          "evidence_ids": [
+            "EVID-002"
+          ],
+          "certainty": "Medium"
+        },
+        {
+          "event_id": "EVT-003",
+          "date_or_range": "2024",
+          "event_type": "Displayed",
+          "description": "Previously separate keepsakes were grouped into the current hallway memory shelf after a house move.",
+          "before_state": "Items stored or displayed separately",
+          "after_state": "Items presented as one composite display",
+          "evidence_ids": [
+            "EVID-003"
+          ],
+          "certainty": "High"
+        }
+      ],
+      "questions_and_answers": [
+        {
+          "qa_id": "QA-001",
+          "question": "Why are these unrelated objects displayed together?",
+          "answer": "The Calder family grouped them because each item represents a different part of shared family history. The shelf functions as a small physical timeline.",
+          "answer_mode": "Qualified",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-002",
+            "EVID-003"
+          ],
+          "claim_ids": [
+            "CLM-001",
+            "CLM-002",
+            "CLM-003"
+          ],
+          "privacy_class": "Public Demo",
+          "status": "Approved"
+        },
+        {
+          "qa_id": "QA-002",
+          "question": "Did the river stone come from the 1998 lake trip?",
+          "answer": "Possibly, but the available evidence does not establish that. Its placement beside the lake photograph supports the association, while its exact provenance remains unknown.",
+          "answer_mode": "Qualified",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-003"
+          ],
+          "claim_ids": [
+            "CLM-003",
+            "CLM-005"
+          ],
+          "privacy_class": "Public Demo",
+          "status": "Approved"
+        },
+        {
+          "qa_id": "QA-003",
+          "question": "What does the sealed letter say?",
+          "answer": "The letter's contents are private and are not represented in the public demonstration record.",
+          "answer_mode": "Private",
+          "evidence_ids": [
+            "EVID-004"
+          ],
+          "claim_ids": [
+            "CLM-004"
+          ],
+          "privacy_class": "Private Adults",
+          "status": "Restricted"
+        }
+      ],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true,
+        "child_sensitive": false,
+        "medical_related": false,
+        "financial_related": false,
+        "living_person_sensitive": false,
+        "redacted_topics": [
+          "Contents of sealed handwritten letter"
+        ]
+      },
+      "approval": {
+        "state": "Pending",
+        "approved_by": null,
+        "decision_id": null,
+        "approval_date": null,
+        "conditions": "Synthetic demonstration record only. The existence of the sealed letter may be shown, but its fictional contents are intentionally outside the public record."
+      }
+    },
+    {
+      "record_id": "COLLECTION-0001",
+      "version": "0.1",
+      "title": "Annual Family Ornament Collection",
+      "record_type": "Collection",
+      "status": "Human Review",
+      "identity": {
+        "description": "A fictional family collection of one commemorative holiday ornament for each year, with ornaments normally stored together and temporarily displayed during the winter season.",
+        "aliases": [
+          "The annual ornaments",
+          "Year-by-year tree ornaments"
+        ],
+        "category": "Seasonal family collection",
+        "maker_or_creator": null,
+        "materials": [
+          "Glass",
+          "Metal",
+          "Wood",
+          "Ceramic",
+          "Paper"
+        ],
+        "distinguishing_features": "Each ornament is associated with a specific calendar year and is intended to represent a memorable event, place, person, or family milestone from that year."
+      },
+      "meaning": {
+        "why_kept": "The fictional Hartwell family keeps the collection because decorating with the ornaments creates a recurring ritual of remembering earlier years together.",
+        "family_significance": "The collection functions as a year-by-year family timeline. Individual ornaments may be ordinary objects, but their ordered membership gives the collection historical meaning.",
+        "associated_people": [
+          "Nora Hartwell",
+          "Eli Hartwell"
+        ],
+        "associated_events": [
+          "Annual winter decorating tradition",
+          "2014 first-home holiday season",
+          "2021 family road trip",
+          "2024 house move"
+        ],
+        "intended_future": "Continue adding one ornament per year while preserving missing years, replacements, and uncertain membership rather than silently rewriting the sequence."
+      },
+      "provenance": {
+        "acquisition_method": "Accumulated annually",
+        "source_or_giver": "Multiple fictional family purchases and gifts",
+        "acquired_date": null,
+        "acquired_place": null,
+        "certainty": "High",
+        "summary": "The collection grew through annual purchases and gifts. Some ornaments have clear receipts or labels; others are known only through photographs, family recollection, or their year markings."
+      },
+      "location_and_state": {
+        "current_area": "Seasonal storage",
+        "exact_location": "Fictional Hartwell home, labeled ornament storage bin in upstairs closet",
+        "lifecycle_state": "Stored",
+        "condition": "Mixed; most ornaments are intact, with several showing ordinary wear",
+        "nested_in_or_displayed_with": [
+          "Labeled ornament storage bin",
+          "Winter tree during seasonal display",
+          "Mantel display for fragile ornaments"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "The Hartwell collection is intended to contain one commemorative ornament for each calendar year.",
+          "claim_type": "Collection",
+          "epistemic_state": "Known",
+          "confidence": 1.0,
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-002"
+          ],
+          "notes": "The annual inclusion rule is explicitly described by the fictional household."
+        },
+        {
+          "claim_id": "CLM-002",
+          "statement": "The 2014 ornament represents the family's first holiday season in their first home.",
+          "claim_type": "Meaning",
+          "epistemic_state": "Known",
+          "confidence": 0.95,
+          "evidence_ids": [
+            "EVID-003"
+          ],
+          "notes": "The ornament is marked 2014 and appears in a dated photograph from that home."
+        },
+        {
+          "claim_id": "CLM-003",
+          "statement": "No 2017 ornament is currently present in the inventoried collection.",
+          "claim_type": "Collection",
+          "epistemic_state": "Known",
+          "confidence": 1.0,
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "notes": "The current physical inventory contains no ornament assigned to 2017."
+        },
+        {
+          "claim_id": "CLM-004",
+          "statement": "A 2017 ornament was probably purchased and later misplaced.",
+          "claim_type": "Provenance",
+          "epistemic_state": "Reported",
+          "confidence": 0.5,
+          "evidence_ids": [
+            "EVID-004"
+          ],
+          "notes": "One family member recalls a 2017 ornament, but no photograph, receipt, or object has been located."
+        },
+        {
+          "claim_id": "CLM-005",
+          "statement": "It is unknown whether the 2017 gap means the ornament was never acquired or was later lost.",
+          "claim_type": "Collection",
+          "epistemic_state": "Unknown",
+          "confidence": 1.0,
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-004"
+          ],
+          "notes": "The collection preserves the gap without selecting a preferred explanation."
+        },
+        {
+          "claim_id": "CLM-006",
+          "statement": "Most ornaments are stored together outside the holiday season and displayed temporarily each winter.",
+          "claim_type": "Location",
+          "epistemic_state": "Known",
+          "confidence": 0.98,
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-002"
+          ],
+          "notes": "The collection has a recurring seasonal state change."
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Physical Inspection",
+          "source_name": "Fictional annual ornament inventory",
+          "captured_date": "2026-07-05",
+          "contributor": "Household archivist",
+          "excerpt_or_observation": "The storage bin contains ornaments labeled for 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023, 2024, and 2025. No ornament labeled 2017 was found.",
+          "sha256": "7d0b46e6ce461eccefe268bc3e283c321b2b357b9d31ad6b91758856ce4c7dcf",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo"
+        },
+        {
+          "evidence_id": "EVID-002",
+          "evidence_type": "Label",
+          "source_name": "Fictional storage-bin label",
+          "captured_date": "2026-07-05",
+          "contributor": "Household archivist",
+          "excerpt_or_observation": "Bin label reads: Annual Ornaments — one for every year.",
+          "sha256": "256268a6947947716a26611f9aae8660976f69452ba2f884bdbcfdc2f9ffa461",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo"
+        },
+        {
+          "evidence_id": "EVID-003",
+          "evidence_type": "Photo",
+          "source_name": "Fictional 2014 holiday photograph",
+          "captured_date": "2014-12-20",
+          "contributor": "Nora Hartwell",
+          "excerpt_or_observation": "The 2014 ornament is visible on the tree in the family's first home, with the year marking legible.",
+          "sha256": "1db83dbda7acbc3fc3860253506cb2e25521fb0a41fdbb579881fbc6fd2ec918",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo"
+        },
+        {
+          "evidence_id": "EVID-004",
+          "evidence_type": "Interview",
+          "source_name": "Fictional interview with Eli Hartwell",
+          "captured_date": "2026-07-05",
+          "contributor": "Eli Hartwell",
+          "excerpt_or_observation": "Eli recalls buying an ornament in 2017 but cannot remember what it looked like or where it went.",
+          "sha256": "e226ede44db9c2ca851680cd54d320a1d1d15f9215ffa18ba637f3dbecde2ad9",
+          "reliability": "Reported",
+          "privacy_class": "Public Demo"
+        },
+        {
+          "evidence_id": "EVID-005",
+          "evidence_type": "Photo",
+          "source_name": "Fictional 2025 winter tree photograph",
+          "captured_date": "2025-12-18",
+          "contributor": "Nora Hartwell",
+          "excerpt_or_observation": "Multiple annual ornaments are visible together on the family's winter tree during seasonal display.",
+          "sha256": "6d2756cbdf371765c87feb2d31f0f67f351b7e51ba04cfa975e6143f33488dc5",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo"
+        }
+      ],
+      "relationships": [
+        {
+          "relationship_id": "REL-001",
+          "relation_type": "CONTAINS",
+          "target": "2014 first-home ornament",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-003"
+          ],
+          "notes": "Confirmed collection member."
+        },
+        {
+          "relationship_id": "REL-002",
+          "relation_type": "CONTAINS",
+          "target": "2021 road-trip ornament",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "notes": "Confirmed collection member."
+        },
+        {
+          "relationship_id": "REL-003",
+          "relation_type": "STORED_IN",
+          "target": "Labeled annual ornament storage bin",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-002"
+          ],
+          "notes": "Primary off-season location."
+        },
+        {
+          "relationship_id": "REL-004",
+          "relation_type": "DISPLAYED_IN",
+          "target": "Winter tree",
+          "evidence_ids": [
+            "EVID-005"
+          ],
+          "notes": "Recurring seasonal display location."
+        },
+        {
+          "relationship_id": "REL-005",
+          "relation_type": "RELATED_TO",
+          "target": "2017 unresolved collection gap",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-004"
+          ],
+          "notes": "Represents an intentionally unresolved missing-year question."
+        }
+      ],
+      "events": [
+        {
+          "event_id": "EVT-001",
+          "date_or_range": "2014",
+          "event_type": "Acquired",
+          "description": "The first-home ornament entered the annual collection.",
+          "before_state": null,
+          "after_state": "2014 represented in the collection",
+          "evidence_ids": [
+            "EVID-003"
+          ],
+          "certainty": "High"
+        },
+        {
+          "event_id": "EVT-002",
+          "date_or_range": "2017",
+          "event_type": "Other",
+          "description": "The annual sequence contains an unresolved gap for 2017.",
+          "before_state": "2016 represented",
+          "after_state": "2017 unresolved; 2018 represented",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-004"
+          ],
+          "certainty": "High"
+        },
+        {
+          "event_id": "EVT-003",
+          "date_or_range": "2024",
+          "event_type": "Moved",
+          "description": "The collection moved to a newly labeled storage bin after the fictional family house move.",
+          "before_state": "Stored in several smaller boxes",
+          "after_state": "Stored together in one labeled annual-ornament bin",
+          "evidence_ids": [
+            "EVID-002"
+          ],
+          "certainty": "Medium"
+        },
+        {
+          "event_id": "EVT-004",
+          "date_or_range": "Each winter",
+          "event_type": "Displayed",
+          "description": "The collection transitions from off-season storage to temporary seasonal display.",
+          "before_state": "Stored",
+          "after_state": "Displayed on the winter tree and mantel",
+          "evidence_ids": [
+            "EVID-005"
+          ],
+          "certainty": "High"
+        }
+      ],
+      "questions_and_answers": [
+        {
+          "qa_id": "QA-001",
+          "question": "What is the rule for belonging to this collection?",
+          "answer": "The Hartwell family intends the collection to contain one commemorative ornament for each calendar year.",
+          "answer_mode": "Direct",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-002"
+          ],
+          "claim_ids": [
+            "CLM-001"
+          ],
+          "privacy_class": "Public Demo",
+          "status": "Approved"
+        },
+        {
+          "qa_id": "QA-002",
+          "question": "Which year is missing?",
+          "answer": "No 2017 ornament is currently present. The available evidence does not establish whether one was never acquired or was later lost.",
+          "answer_mode": "Unknown",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-004"
+          ],
+          "claim_ids": [
+            "CLM-003",
+            "CLM-004",
+            "CLM-005"
+          ],
+          "privacy_class": "Public Demo",
+          "status": "Approved"
+        },
+        {
+          "qa_id": "QA-003",
+          "question": "Where are the ornaments during the rest of the year?",
+          "answer": "Most are stored together in a labeled ornament bin in the upstairs closet, then moved to seasonal display each winter.",
+          "answer_mode": "Direct",
+          "evidence_ids": [
+            "EVID-001",
+            "EVID-002",
+            "EVID-005"
+          ],
+          "claim_ids": [
+            "CLM-006"
+          ],
+          "privacy_class": "Public Demo",
+          "status": "Approved"
+        },
+        {
+          "qa_id": "QA-004",
+          "question": "Why does the 2014 ornament matter?",
+          "answer": "It represents the family's first holiday season in their first home and is documented in a dated 2014 photograph.",
+          "answer_mode": "Direct",
+          "evidence_ids": [
+            "EVID-003"
+          ],
+          "claim_ids": [
+            "CLM-002"
+          ],
+          "privacy_class": "Public Demo",
+          "status": "Approved"
+        }
+      ],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true,
+        "child_sensitive": false,
+        "medical_related": false,
+        "financial_related": false,
+        "living_person_sensitive": false,
+        "redacted_topics": []
+      },
+      "approval": {
+        "state": "Pending",
+        "approved_by": null,
+        "decision_id": null,
+        "approval_date": null,
+        "conditions": "Synthetic demonstration record only."
+      }
+    },
+    {
+      "record_id": "OBJ-0002",
+      "version": "0.1",
+      "title": "Apartment bird photograph",
+      "record_type": "Object",
+      "status": "Human Review",
+      "identity": {
+        "description": "Independently fictional apartment bird photograph for the HKL research workbench.",
+        "category": "Document",
+        "aliases": [
+          "1991 snapshot"
+        ]
+      },
+      "meaning": {
+        "why_kept": "Fictional research example preserving source distinctions."
+      },
+      "provenance": {
+        "certainty": "Unknown",
+        "acquired_date": null
+      },
+      "location_and_state": {
+        "lifecycle_state": "Unknown"
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "The apartment bird photograph was captured on 1991-06-15.",
+          "claim_type": "Other",
+          "epistemic_state": "Known",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "confidence": null
+        },
+        {
+          "claim_id": "CLM-002",
+          "statement": "The apartment photograph was digitized on 2026-07-20.",
+          "claim_type": "Other",
+          "epistemic_state": "Known",
+          "evidence_ids": [
+            "EVID-002"
+          ],
+          "confidence": null
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Document",
+          "source_name": "Fictional Apartment bird photograph source EVID-001",
+          "captured_date": "2026-07-20",
+          "contributor": "Elena Marlow",
+          "excerpt_or_observation": "The apartment bird photograph was captured on 1991-06-15.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "66383f8b671e87f2ebebeeb655ca4065975ce2a10b796636534471c0b01f2bfa"
+        },
+        {
+          "evidence_id": "EVID-002",
+          "evidence_type": "Document",
+          "source_name": "Fictional Apartment bird photograph source EVID-002",
+          "captured_date": "2026-07-20",
+          "contributor": "Fictional digitizer",
+          "excerpt_or_observation": "The apartment photograph was digitized on 2026-07-20.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "8a36673d49279c75297cefaef7b3d2ca8aac78a5cbf15d40c90c0dba45315b19"
+        }
+      ],
+      "relationships": [],
+      "events": [],
+      "questions_and_answers": [],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true
+      },
+      "approval": {
+        "state": "Pending"
+      }
+    },
+    {
+      "record_id": "OBJ-0003",
+      "version": "0.1",
+      "title": "Bird manufacturing label observation",
+      "record_type": "Object",
+      "status": "Human Review",
+      "identity": {
+        "description": "Independently fictional bird manufacturing label observation for the HKL research workbench.",
+        "category": "Observation",
+        "aliases": [
+          "underside inscription"
+        ]
+      },
+      "meaning": {
+        "why_kept": "Fictional research example preserving source distinctions."
+      },
+      "provenance": {
+        "certainty": "Unknown",
+        "acquired_date": null
+      },
+      "location_and_state": {
+        "lifecycle_state": "Unknown"
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "The observed label beneath the bird reads: Made in Portugal.",
+          "claim_type": "Other",
+          "epistemic_state": "Known",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "confidence": null
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Document",
+          "source_name": "Fictional Bird manufacturing label observation source EVID-001",
+          "captured_date": "2026-07-20",
+          "contributor": "Fictional inspector",
+          "excerpt_or_observation": "The observed label beneath the bird reads: Made in Portugal.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "0a6a44a2745b3c91515cc1e519a5061e9852a8908425ea1759882f80ee8d3717"
+        }
+      ],
+      "relationships": [],
+      "events": [],
+      "questions_and_answers": [],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true
+      },
+      "approval": {
+        "state": "Pending"
+      }
+    },
+    {
+      "record_id": "OBJ-0004",
+      "version": "0.1",
+      "title": "Elena bird interview transcript",
+      "record_type": "Object",
+      "status": "Human Review",
+      "identity": {
+        "description": "Independently fictional elena bird interview transcript for the HKL research workbench.",
+        "category": "Account",
+        "aliases": [
+          "Elena recollection"
+        ]
+      },
+      "meaning": {
+        "why_kept": "Fictional research example preserving source distinctions."
+      },
+      "provenance": {
+        "certainty": "Unknown",
+        "acquired_date": null
+      },
+      "location_and_state": {
+        "lifecycle_state": "Unknown"
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "Ruth gave me the blue ceramic bird, but I do not remember the year.",
+          "claim_type": "Other",
+          "epistemic_state": "Reported",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "confidence": 0.65
+        },
+        {
+          "claim_id": "CLM-002",
+          "statement": "Leo Marlow gave the bird to Elena.",
+          "claim_type": "Other",
+          "epistemic_state": "Disputed",
+          "evidence_ids": [
+            "EVID-002"
+          ],
+          "confidence": 0.8
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Interview",
+          "source_name": "Fictional Elena bird interview transcript source EVID-001",
+          "captured_date": "2026-07-20",
+          "contributor": "Elena Marlow",
+          "excerpt_or_observation": "Ruth gave me the blue ceramic bird, but I do not remember the year.",
+          "reliability": "Reported",
+          "privacy_class": "Public Demo",
+          "sha256": "9e3cc824b5f04cc80d2b0a72c27d8491b29e4141e547bc1ed7181dc91469c204"
+        },
+        {
+          "evidence_id": "EVID-002",
+          "evidence_type": "Interview",
+          "source_name": "Fictional Elena bird interview transcript source EVID-002",
+          "captured_date": "2026-08-03",
+          "contributor": "Leo Marlow",
+          "excerpt_or_observation": "Leo recalls that he, rather than Ruth, gave Elena the blue ceramic bird.",
+          "reliability": "Reported",
+          "privacy_class": "Public Demo",
+          "sha256": "87a301bda6dfeeeea28d77cf4a1e95309763aceaaaccd0a06e463c4acaf1da54"
+        }
+      ],
+      "relationships": [],
+      "events": [],
+      "questions_and_answers": [],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true
+      },
+      "approval": {
+        "state": "Pending"
+      }
+    },
+    {
+      "record_id": "OBJ-0005",
+      "version": "0.1",
+      "title": "Smooth river stone",
+      "record_type": "Object",
+      "status": "Human Review",
+      "identity": {
+        "description": "Independently fictional smooth river stone for the HKL research workbench.",
+        "category": "Object",
+        "aliases": [
+          "lake pebble"
+        ]
+      },
+      "meaning": {
+        "why_kept": "Fictional research example preserving source distinctions."
+      },
+      "provenance": {
+        "certainty": "Unknown",
+        "acquired_date": null
+      },
+      "location_and_state": {
+        "lifecycle_state": "Unknown"
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "The river stone has no material analysis or geological-origin evidence.",
+          "claim_type": "Other",
+          "epistemic_state": "Unknown",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "confidence": null
+        },
+        {
+          "claim_id": "CLM-002",
+          "statement": "Placement beside the Calder lake photograph does not establish shared provenance.",
+          "claim_type": "Other",
+          "epistemic_state": "Unknown",
+          "evidence_ids": [
+            "EVID-002"
+          ],
+          "confidence": null
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Document",
+          "source_name": "Fictional Smooth river stone source EVID-001",
+          "captured_date": "2026-07-20",
+          "contributor": "Fictional inspector",
+          "excerpt_or_observation": "The river stone has no material analysis or geological-origin evidence.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "f96b3a3d505b533302ed939361832450b546ecfc3429964a011f5db316354488"
+        },
+        {
+          "evidence_id": "EVID-002",
+          "evidence_type": "Document",
+          "source_name": "Fictional Smooth river stone source EVID-002",
+          "captured_date": "2026-07-20",
+          "contributor": "Fictional inspector",
+          "excerpt_or_observation": "Placement beside the Calder lake photograph does not establish shared provenance.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "7f098970d0f119cb775488fa99b15ecda43f62655441befb04c8dbfb7d805767"
+        }
+      ],
+      "relationships": [],
+      "events": [],
+      "questions_and_answers": [],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true
+      },
+      "approval": {
+        "state": "Pending"
+      }
+    },
+    {
+      "record_id": "OBJ-0006",
+      "version": "0.1",
+      "title": "Calder lake photograph",
+      "record_type": "Object",
+      "status": "Human Review",
+      "identity": {
+        "description": "Independently fictional calder lake photograph for the HKL research workbench.",
+        "category": "Document",
+        "aliases": [
+          "trip picture"
+        ]
+      },
+      "meaning": {
+        "why_kept": "Fictional research example preserving source distinctions."
+      },
+      "provenance": {
+        "certainty": "Unknown",
+        "acquired_date": null
+      },
+      "location_and_state": {
+        "lifecycle_state": "Unknown"
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "The lake photograph has a date notation of 1998-07-18.",
+          "claim_type": "Other",
+          "epistemic_state": "Known",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "confidence": null
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Document",
+          "source_name": "Fictional Calder lake photograph source EVID-001",
+          "captured_date": "2026-07-20",
+          "contributor": "Maya Calder",
+          "excerpt_or_observation": "The lake photograph has a date notation of 1998-07-18.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "f7aaec3dacb4bf7c3b79c26148a3ec0daaf001c173ae90611d09c334cd7f37f8"
+        }
+      ],
+      "relationships": [],
+      "events": [],
+      "questions_and_answers": [],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true
+      },
+      "approval": {
+        "state": "Pending"
+      }
+    },
+    {
+      "record_id": "OBJ-0007",
+      "version": "0.1",
+      "title": "Concert ticket",
+      "record_type": "Object",
+      "status": "Human Review",
+      "identity": {
+        "description": "Independently fictional concert ticket for the HKL research workbench.",
+        "category": "Object",
+        "aliases": [
+          "2012 admission stub"
+        ]
+      },
+      "meaning": {
+        "why_kept": "Fictional research example preserving source distinctions."
+      },
+      "provenance": {
+        "certainty": "Unknown",
+        "acquired_date": null
+      },
+      "location_and_state": {
+        "lifecycle_state": "Unknown"
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "Maya says the concert ticket means the beginning of a friendship.",
+          "claim_type": "Other",
+          "epistemic_state": "Reported",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "confidence": null
+        },
+        {
+          "claim_id": "CLM-002",
+          "statement": "Jonah says the same concert ticket reminds him of a difficult evening.",
+          "claim_type": "Other",
+          "epistemic_state": "Reported",
+          "evidence_ids": [
+            "EVID-002"
+          ],
+          "confidence": null
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Document",
+          "source_name": "Fictional Concert ticket source EVID-001",
+          "captured_date": "2026-07-20",
+          "contributor": "Maya Calder",
+          "excerpt_or_observation": "Maya says the concert ticket means the beginning of a friendship.",
+          "reliability": "Reported",
+          "privacy_class": "Public Demo",
+          "sha256": "4e332a5a1f0b0df0206fe501260c252f8a97027da94ddffa2fbee4bd54ce04e6"
+        },
+        {
+          "evidence_id": "EVID-002",
+          "evidence_type": "Document",
+          "source_name": "Fictional Concert ticket source EVID-002",
+          "captured_date": "2026-07-20",
+          "contributor": "Jonah Calder",
+          "excerpt_or_observation": "Jonah says the same concert ticket reminds him of a difficult evening.",
+          "reliability": "Reported",
+          "privacy_class": "Public Demo",
+          "sha256": "3fd5afbbea3868ff534607a4f7f552ed622121cf9c6b83c9831a772153ab1c3d"
+        }
+      ],
+      "relationships": [],
+      "events": [],
+      "questions_and_answers": [],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true
+      },
+      "approval": {
+        "state": "Pending"
+      }
+    },
+    {
+      "record_id": "OBJ-0008",
+      "version": "0.1",
+      "title": "Sealed handwritten letter",
+      "record_type": "Object",
+      "status": "Human Review",
+      "identity": {
+        "description": "Independently fictional sealed handwritten letter for the HKL research workbench.",
+        "category": "Document",
+        "aliases": [
+          "sealed correspondence"
+        ]
+      },
+      "meaning": {
+        "why_kept": "Fictional research example preserving source distinctions."
+      },
+      "provenance": {
+        "certainty": "Unknown",
+        "acquired_date": null
+      },
+      "location_and_state": {
+        "lifecycle_state": "Unknown"
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "SYNTHETIC-RESTRICTED-ORCHID-482: the fictional letter describes a surprise garden.",
+          "claim_type": "Other",
+          "epistemic_state": "Reported",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "confidence": null
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Document",
+          "source_name": "Fictional Sealed handwritten letter source EVID-001",
+          "captured_date": "2026-07-20",
+          "contributor": "Fictional letter writer",
+          "excerpt_or_observation": "SYNTHETIC-RESTRICTED-ORCHID-482: the fictional letter describes a surprise garden.",
+          "reliability": "Reported",
+          "privacy_class": "Restricted",
+          "sha256": "009b8f99d5fd759f3fb9814ed869b5b68e0ace895c44487614c1a2952f2078e2"
+        }
+      ],
+      "relationships": [],
+      "events": [],
+      "questions_and_answers": [],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true
+      },
+      "approval": {
+        "state": "Pending"
+      }
+    },
+    {
+      "record_id": "OBJ-0009",
+      "version": "0.1",
+      "title": "2014 first-home ornament",
+      "record_type": "Object",
+      "status": "Human Review",
+      "identity": {
+        "description": "Independently fictional 2014 first-home ornament for the HKL research workbench.",
+        "category": "Object",
+        "aliases": [
+          "first house decoration"
+        ]
+      },
+      "meaning": {
+        "why_kept": "Fictional research example preserving source distinctions."
+      },
+      "provenance": {
+        "certainty": "Unknown",
+        "acquired_date": null
+      },
+      "location_and_state": {
+        "lifecycle_state": "Unknown"
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "The first-home ornament carries the inscription 2014.",
+          "claim_type": "Other",
+          "epistemic_state": "Known",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "confidence": null
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Document",
+          "source_name": "Fictional 2014 first-home ornament source EVID-001",
+          "captured_date": "2026-07-20",
+          "contributor": "Fictional inspector",
+          "excerpt_or_observation": "The first-home ornament carries the inscription 2014.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "b83c3928e9da48e7706ce89b6bdf8bcb46d7ee62cf3dade7f761cee785834fc6"
+        }
+      ],
+      "relationships": [],
+      "events": [],
+      "questions_and_answers": [],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true
+      },
+      "approval": {
+        "state": "Pending"
+      }
+    },
+    {
+      "record_id": "OBJ-0010",
+      "version": "0.1",
+      "title": "Small brass key",
+      "record_type": "Object",
+      "status": "Human Review",
+      "identity": {
+        "description": "Independently fictional small brass key for the HKL research workbench.",
+        "category": "Object",
+        "aliases": [
+          "cabinet key"
+        ]
+      },
+      "meaning": {
+        "why_kept": "Fictional research example preserving source distinctions."
+      },
+      "provenance": {
+        "certainty": "Unknown",
+        "acquired_date": null
+      },
+      "location_and_state": {
+        "lifecycle_state": "Unknown"
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "statement": "Elena estimates that the brass key was made around 1980.",
+          "claim_type": "Other",
+          "epistemic_state": "Reported",
+          "evidence_ids": [
+            "EVID-001"
+          ],
+          "confidence": null
+        },
+        {
+          "claim_id": "CLM-002",
+          "statement": "No source establishes which lock the brass key opens.",
+          "claim_type": "Other",
+          "epistemic_state": "Unknown",
+          "evidence_ids": [
+            "EVID-002"
+          ],
+          "confidence": null
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "EVID-001",
+          "evidence_type": "Document",
+          "source_name": "Fictional Small brass key source EVID-001",
+          "captured_date": "2026-07-20",
+          "contributor": "Elena Marlow",
+          "excerpt_or_observation": "Elena estimates that the brass key was made around 1980.",
+          "reliability": "Reported",
+          "privacy_class": "Public Demo",
+          "sha256": "edd26dfb13589ecb7ca350a223f3cf566739c7541d82ebe6627de4558b797281"
+        },
+        {
+          "evidence_id": "EVID-002",
+          "evidence_type": "Document",
+          "source_name": "Fictional Small brass key source EVID-002",
+          "captured_date": "2026-07-20",
+          "contributor": "Fictional inspector",
+          "excerpt_or_observation": "No source establishes which lock the brass key opens.",
+          "reliability": "Primary",
+          "privacy_class": "Public Demo",
+          "sha256": "f1824880d4852abd7e0bb2d82137de6418a902437451f492ffceb715fb657089"
+        }
+      ],
+      "relationships": [],
+      "events": [],
+      "questions_and_answers": [],
+      "privacy": {
+        "privacy_class": "Public Demo",
+        "human_approval_required": true
+      },
+      "approval": {
+        "state": "Pending"
+      }
+    }
+  ]
+}

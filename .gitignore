@@ -52,3 +52,6 @@ working-notes/
 *.zip
 Racette_House_*
 HKL_*
+
+# Reproducible local experiment runs
+work/
