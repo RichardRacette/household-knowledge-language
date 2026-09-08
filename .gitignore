@@ -60,3 +60,6 @@ work/
 !/hkl_workbench/
 !/hkl_workbench/*.py
 !/hkl_workbench/*.json
+
+# Reviewed packet containing only independently fictional public sources.
+!/research/artifacts/fictional-public-packet.zip
