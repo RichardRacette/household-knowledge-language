@@ -150,12 +150,27 @@ decisions. Its [experiment contract](docs/research/contract.md) freezes the five
 research questions; the [source note](docs/research/sources.md) separates primary
 research from our implementation hypotheses.
 
-Run the initial provenance/preservation slice into a new directory:
+Run all five experiments into a new directory (no paid service, network, model or
+database is used after installing dependencies):
 
 ```bash
-python -m hkl_workbench slice --output work/slice
-python -m hkl_workbench verify-packet --packet work/slice/packet
+python -m pip install -r requirements-research.txt
+python -m hkl_workbench run --output work/reproduction
+python -m hkl_workbench verify-packet --packet work/reproduction/packet
 ```
+
+Each run writes machine-readable results, a public packet directory and a ZIP.
+Use a new output directory for each run; earlier results are preserved. For the
+compact initial E1/E3 slice, use `slice` instead of `run`. For development-only
+retrieval, add `--split development`; the default includes all 24 frozen questions.
+
+See [methods and reproduction](docs/research/reproduction.md),
+[findings](docs/research/findings.md), [architecture decisions](docs/research/decisions.md),
+and [retrieval protocol](docs/research/retrieval-method.md).
+
+The workbench tests structured metadata and deterministic answer plans. It does not
+authenticate human review, establish family truth, validate arbitrary prose, or measure
+LLM question answering. Graph comparisons are bounded synthetic experiments.
 
 ## Documentation
 
@@ -171,12 +186,13 @@ These documents describe the public model only. They do not contain real househo
 
 This repository is an early public proof of concept.
 
-The first public release will include:
+The public research branch includes:
 
 - A generalized household-record JSON Schema
 - A Python validator
 - Fictional example records
 - Governance and privacy tests
 - Documentation of evidence and uncertainty
+- A frozen fictional corpus, five offline experiment tracks and portable public evidence packets
 
 This repository will not contain real family records, private evidence, ChatGPT exports, medical information, financial information, or internal project-management files.

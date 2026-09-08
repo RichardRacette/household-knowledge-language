@@ -25,13 +25,13 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements-research.txt
 
       - name: Run validation tests
         run: python -m unittest discover -v
 
-      - name: Run offline research slice
-        run: python -m hkl_workbench slice --output work/ci-slice
+      - name: Run all offline experiments
+        run: python -m hkl_workbench run --output work/ci-run
 
       - name: Validate fictional examples
         run: |

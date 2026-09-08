@@ -1,6 +1,5 @@
 """Export the fixed public packet profile; no private-view fallback."""
 import copy
-import shutil
 import stat
 import zipfile
 from datetime import datetime, timezone
@@ -15,13 +14,19 @@ PACKET_README = """# Fictional HKL public evidence packet
 Every household, source file and review decision in this packet is fictional.
 Sources are authored UTF-8 descriptions, not actual photographs or historical documents.
 This public view omits restricted source bytes and every derivative depending on them.
-There is no fallback source location. policy.json carries permitted existence stubs only.
+There is no fallback source location. policy.json carries permitted evidence-existence
+stubs only. Evidence omission does not retract independently Public Demo object metadata;
+record privacy must be Restricted to withhold that record's identity. An independently
+public source can still describe the same object. Unreachable profile entities are removed.
 
 Run `python -I -S read_packet.py . --isolated` from this directory. No installation,
 network, original repository or account is required. The standalone reader checks the
 enumerated HKL packet 1.0 subset: complete file inventory and hashes, safe paths,
-supported versions, qualified references, simulated decision links, RO-Crate 1.2
-root/descriptor fields, local graph links, curation inputs and software versions.
+supported versions, qualified/local references, acyclic derivations, simulated decision
+actions/times/links and the retained earlier snapshot, RO-Crate 1.2 root/descriptor
+fields, local graph links, curation inputs and software receipt/version consistency.
+The three baseline record snapshots are required while their record remains public;
+an omitted record's baseline snapshot must also be absent. Fixture-origin receipts agree.
 It does not run JSON-LD expansion, full JSON Schema validation, ontology reasoning,
 signature authentication, or full RO-Crate compliance testing.
 
@@ -78,6 +83,8 @@ def export_packet(corpus, profile, destination, receipt, fixture_dir=FIXTURES):
     for path in sorted((fixture_dir / "originals").glob("*.json")):
         original = read_json(path)
         rid = original["record_id"]
+        if rid not in {r["record_id"] for r in view["corpus"]["records"]}:
+            continue
         permitted = {s["ref"] for s in view["profile"]["sources"]}
         original["evidence"] = [e for e in original["evidence"] if rid + "/" + e["evidence_id"] in permitted]
         original["questions_and_answers"] = []

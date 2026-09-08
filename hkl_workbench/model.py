@@ -11,6 +11,7 @@ from datetime import date, datetime
 from jsonschema import Draft202012Validator, FormatChecker
 
 from .common import ROOT, read_json
+from .temporal import timestamp
 
 
 def tables(corpus, profile):
@@ -134,13 +135,26 @@ def semantic_errors(corpus, profile):
                 errors.append("event subject mismatch")
         if a["supersedes"]:
             old = assertions.get(a["supersedes"])
-            if not old or old["subject"] != a["subject"] or old["predicate"] != a["predicate"] or old["event"] != a["event"] or old["recorded_at"] >= a["recorded_at"]:
+            if not old or old["subject"] != a["subject"] or old["predicate"] != a["predicate"] or old["event"] != a["event"] or timestamp(old["recorded_at"]) >= timestamp(a["recorded_at"]):
                 errors.append("inconsistent assertion correction")
         if a["decision_ref"]:
             d = decisions.get(a["decision_ref"], {})
-            if d.get("scope") != "claim" or d.get("target") != a["ref"] or d.get("action") != "accept_for_demo" or d.get("recorded_at", "") < a["recorded_at"]:
+            if d.get("scope") != "claim" or d.get("target") != a["ref"] or d.get("action") != "accept_for_demo" or timestamp(d["recorded_at"]) < timestamp(a["recorded_at"]):
                 errors.append("inconsistent claim decision")
         c = claims.get(a["ref"], {})
+        local_support = {a["ref"].split("/")[0] + "/" + x for x in c.get("evidence_ids", [])}
+        if local_support != set(a["source_refs"]):
+            errors.append("assertion differs from record-local evidence links")
+        if all(x in sources for x in a["source_refs"]):
+            try:
+                support_closure = set().union(*(dependency_closure(x, sources) for x in a["source_refs"]))
+                for parent in a["derived_from"]:
+                    if parent in assertions and not set(assertions[parent]["source_refs"]) <= support_closure:
+                        errors.append("assertion derivation lacks source lineage")
+            except ValueError:
+                pass  # Source-cycle/missing-reference diagnostics are collected above.
+        if c.get("epistemic_state") == "Known" and any(evidence.get(x, {}).get("reliability") != "Primary" for x in a["source_refs"]):
+            errors.append("Known assertion lacks primary-only support")
         if not a["source_refs"] and c.get("epistemic_state") not in ("Unknown", "Not Applicable"):
             errors.append("non-unknown assertion lacks evidence")
         if a["basis"] in ("account", "quotation", "paraphrase") and c.get("epistemic_state") == "Known":
@@ -187,7 +201,7 @@ def simulated_accept(profile, ref, decision_id, recorded_at):
         raise ValueError("decision ID already exists")
     updated = copy.deepcopy(profile)
     a = next((x for x in updated["assertions"] if x["ref"] == ref), None)
-    if a is None or recorded_at < a["recorded_at"]:
+    if a is None or timestamp(recorded_at) < timestamp(a["recorded_at"]):
         raise ValueError("invalid simulated transition")
     datetime.fromisoformat(recorded_at.replace("Z", "+00:00"))
     updated["decisions"].append(dict(id=decision_id, scope="claim", target=ref, action="accept_for_demo", simulated=True, actor="Simulated reviewer", recorded_at=recorded_at))

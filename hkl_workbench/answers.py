@@ -4,7 +4,7 @@ from __future__ import annotations
 import copy
 
 from .model import dependency_closure, tables
-from .temporal import active_assertions, time_match
+from .temporal import active_assertions, source_recording_times, time_match, timestamp
 
 
 def public_view(corpus, profile):
@@ -53,6 +53,12 @@ def public_view(corpus, profile):
     for a in out_profile["assertions"]:
         if a["event"] not in event_ids:
             a["event"] = None
+    reached = {a["subject"] for a in out_profile["assertions"]}
+    reached |= {x for s in out_profile["sources"] for x in s["entities"]}
+    reached |= {x for r in out_profile["relations"] for x in (r["subject"], r["object"])}
+    reached |= {e["subject"] for e in out_profile["events"]}
+    reached |= {a["subject"] for a in acknowledgments}
+    out_profile["entities"] = [e for e in out_profile["entities"] if e["id"] in reached]
     return {"corpus": out_corpus, "profile": out_profile, "acknowledgments": acknowledgments}
 
 
@@ -63,8 +69,11 @@ def build_plan(view, retrieved_refs, intent):
     available = set(retrieved_refs) & set(evidence)
     as_of = intent.get("as_of")
     if as_of:
-        available = {r for r in available if not evidence[r].get("captured_date") or evidence[r]["captured_date"] <= as_of[:10]}
-    candidates = [a for a in active_assertions(profile["assertions"], as_of) if a["subject"] in intent["subjects"] and a["predicate"] == intent["predicate"]]
+        recorded = source_recording_times(profile)
+        available = {r for r in available if r in recorded and timestamp(recorded[r]) <= timestamp(as_of)}
+    active = active_assertions(profile["assertions"], as_of)
+    active_ids = {a["ref"] for a in active}
+    candidates = [a for a in active if a["subject"] in intent["subjects"] and a["predicate"] == intent["predicate"]]
     if intent.get("valid_at"):
         candidates = [a for a in candidates if time_match(a["time"], intent["valid_at"])]
     selected = []
@@ -75,11 +84,11 @@ def build_plan(view, retrieved_refs, intent):
         if not needed <= available:
             continue
         decision = decisions.get(a["decision_ref"], {})
-        if decision.get("scope") != "claim" or decision.get("target") != a["ref"] or decision.get("simulated") is not True or decision.get("action") != "accept_for_demo" or (as_of and decision.get("recorded_at", "") > as_of):
+        if decision.get("scope") != "claim" or decision.get("target") != a["ref"] or decision.get("simulated") is not True or decision.get("action") != "accept_for_demo" or (as_of and timestamp(decision["recorded_at"]) > timestamp(as_of)):
             needs_review = True
             continue
         c = claims[a["ref"]]
-        selected.append({"claim": a["ref"], "subject": a["subject"], "predicate": a["predicate"], "value": a["object"], "attributed_to": a["attributed_to"], "epistemic_state": c["epistemic_state"], "evidence": sorted(needed), "derivation": a["derived_from"], "source_authority": {r: evidence[r]["reliability"] for r in sorted(needed)}, "decision": a["decision_ref"], "decision_simulated": True, "time": a["time"], "conflicts_with": a["conflicts_with"]})
+        selected.append({"claim": a["ref"], "subject": a["subject"], "predicate": a["predicate"], "value": a["object"], "attributed_to": a["attributed_to"], "epistemic_state": c["epistemic_state"], "evidence": sorted(needed), "derivation": a["derived_from"], "source_authority": {r: evidence[r]["reliability"] for r in sorted(needed)}, "decision": a["decision_ref"], "decision_simulated": True, "time": a["time"], "conflicts_with": [r for r in a["conflicts_with"] if r in active_ids]})
     withheld = any(x["subject"] in intent["subjects"] and x["predicate"] == intent["predicate"] for x in view["acknowledgments"])
     if needs_review:
         mode = "Needs Human"

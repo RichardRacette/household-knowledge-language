@@ -2,13 +2,38 @@
 from datetime import date, datetime
 
 
+def timestamp(value):
+    return datetime.fromisoformat(value.replace("Z", "+00:00"))
+
+
 def active_assertions(assertions, as_of=None):
     """Correction changes the available assertion view, never the event history."""
     if as_of:
-        datetime.fromisoformat(as_of.replace("Z", "+00:00"))
-    available = [a for a in assertions if as_of is None or a["recorded_at"] <= as_of]
+        timestamp(as_of)
+    available = [a for a in assertions if as_of is None or timestamp(a["recorded_at"]) <= timestamp(as_of)]
     superseded = {a["supersedes"] for a in available if a["supersedes"]}
     return [a for a in available if a["ref"] not in superseded]
+
+
+def source_recording_times(profile):
+    """Earliest supporting assertion; source capture date is not availability.
+
+    Standalone source-ingest timestamps are absent from profile 1.0. Sources with
+    no recorded assertion have unknown availability and are excluded as of a time.
+    """
+    times = {}
+    for a in profile["assertions"]:
+        for ref in a["source_refs"]:
+            if ref not in times or timestamp(a["recorded_at"]) < timestamp(times[ref]):
+                times[ref] = a["recorded_at"]
+    return times
+
+
+def available_as_of(profile, as_of):
+    times = source_recording_times(profile)
+    return {"as_of": as_of, "assertions": [a["ref"] for a in active_assertions(profile["assertions"], as_of)],
+            "evidence": sorted(r for r, t in times.items() if timestamp(t) <= timestamp(as_of)),
+            "source_time_basis": "earliest recorded supporting assertion; unreferenced source availability unknown"}
 
 
 def time_match(period, day):
