@@ -1,0 +1,450 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "fictional",
+    "entities",
+    "sources",
+    "assertions",
+    "decisions",
+    "events",
+    "relations"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0"
+    },
+    "fictional": {
+      "const": true
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entity"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/assertion"
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/decision"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/event"
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relation"
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/RichardRacette/household-knowledge-language/research/profile/1.0",
+  "title": "Fictional HKL experimental profile 1.0",
+  "$defs": {
+    "entity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "label",
+        "aliases"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "physical_object",
+            "document",
+            "observation",
+            "account",
+            "composite",
+            "collection",
+            "person",
+            "place"
+          ]
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ref",
+        "path",
+        "derived_from",
+        "entities",
+        "disclosure"
+      ],
+      "properties": {
+        "ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "derived_from": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "disclosure": {
+          "enum": [
+            "public",
+            "acknowledge",
+            "omit"
+          ]
+        }
+      }
+    },
+    "assertion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ref",
+        "subject",
+        "predicate",
+        "object",
+        "source_refs",
+        "attributed_to",
+        "basis",
+        "recorded_at",
+        "decision_ref",
+        "derived_from",
+        "conflicts_with",
+        "supersedes",
+        "time",
+        "event"
+      ],
+      "properties": {
+        "ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "predicate": {
+          "type": "string",
+          "minLength": 1
+        },
+        "object": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "attributed_to": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basis": {
+          "enum": [
+            "observation",
+            "account",
+            "quotation",
+            "paraphrase",
+            "unknown"
+          ]
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "decision_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "derived_from": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "conflicts_with": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "supersedes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "time": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "expression",
+                "precision",
+                "start",
+                "end"
+              ],
+              "properties": {
+                "expression": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "precision": {
+                  "enum": [
+                    "exact",
+                    "year",
+                    "approximate",
+                    "interval",
+                    "open",
+                    "by"
+                  ]
+                },
+                "start": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date"
+                },
+                "end": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date"
+                }
+              }
+            }
+          ]
+        },
+        "event": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "scope",
+        "target",
+        "action",
+        "simulated",
+        "actor",
+        "recorded_at"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "enum": [
+            "claim",
+            "qa",
+            "record"
+          ]
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "action": {
+          "const": "accept_for_demo"
+        },
+        "simulated": {
+          "const": true
+        },
+        "actor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "subject",
+        "when",
+        "source_refs"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "Moved",
+            "Photographed",
+            "Created",
+            "Recorded"
+          ]
+        },
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "when": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "expression",
+            "precision",
+            "start",
+            "end"
+          ],
+          "properties": {
+            "expression": {
+              "type": "string",
+              "minLength": 1
+            },
+            "precision": {
+              "enum": [
+                "exact",
+                "year",
+                "approximate",
+                "interval",
+                "open",
+                "by"
+              ]
+            },
+            "start": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date"
+            },
+            "end": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date"
+            }
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subject",
+        "predicate",
+        "object",
+        "source_refs"
+      ],
+      "properties": {
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "predicate": {
+          "enum": [
+            "depicts",
+            "observes",
+            "contains",
+            "displayed_with"
+          ]
+        },
+        "object": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

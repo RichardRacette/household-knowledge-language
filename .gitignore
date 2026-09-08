@@ -55,3 +55,8 @@ HKL_*
 
 # Reproducible local experiment runs
 work/
+
+# Explicit public research package (the private HKL_* exclusion stays above).
+!/hkl_workbench/
+!/hkl_workbench/*.py
+!/hkl_workbench/*.json

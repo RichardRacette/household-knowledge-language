@@ -139,12 +139,29 @@ Install the validator dependency:
 
 ```bash
 pip install -r requirements.txt
+python -m unittest discover -v
+python validate_record.py ceramic_bird.json
+python validate_record.py composite_memory_shelf.json
+python validate_record.py annual_ornament_collection.json
+```
+
+The offline research workbench uses explicitly fictional sources and simulated
+decisions. Its [experiment contract](docs/research/contract.md) freezes the five
+research questions; the [source note](docs/research/sources.md) separates primary
+research from our implementation hypotheses.
+
+Run the initial provenance/preservation slice into a new directory:
+
+```bash
+python -m hkl_workbench slice --output work/slice
+python -m hkl_workbench verify-packet --packet work/slice/packet
+```
 
 ## Documentation
 
 The public proof of concept includes three short design documents:
 
-- [Concept](docs/concept.md) — why household knowledge needs more than a traditional inventory
+- [Concept](docs/Concept.md) — why household knowledge needs more than a traditional inventory
 - [Evidence and Uncertainty](docs/evidence-and-uncertainty.md) — how HKL distinguishes known, reported, inferred, disputed, and unknown information
 - [Architecture](docs/architecture.md) — how records, claims, evidence, relationships, events, privacy, validation, and automated testing fit together
 
