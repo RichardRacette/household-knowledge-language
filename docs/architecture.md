@@ -112,3 +112,22 @@ Collection
 The current public repository is not a production database, a family archive, a complete knowledge graph engine, an autonomous fact extractor, an automated approval system, or a public interface for real household records.
 
 It is a deliberately small proof of concept for the record language and its governance principles.
+
+## Offline research workbench
+
+The [research contract](research/contract.md) adds a versioned, explicitly fictional
+experimental profile without changing the original record schema. Its runtime is:
+
+```text
+Frozen corpus + profile + source bytes
+  -> schema checks -> semantic reference/decision/interval checks
+  -> public projection (including restricted derivation closure)
+  -> direct / entity / event retrieval -> deterministic answer plan
+  -> frozen expectation evaluator
+```
+
+The same projection exports a portable public evidence packet with a standalone reader.
+An isolated process verifies it with no network or original-project file access.
+CI discovers all unittest suites, runs all five experiment tracks and retains validation
+of the original examples. [Architecture decisions](research/decisions.md) describe which
+extensions the experiments justify and which capabilities remain outside the workbench.

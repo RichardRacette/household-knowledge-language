@@ -1,0 +1,1450 @@
+{
+  "version": "1.0",
+  "fictional": true,
+  "entities": [
+    {
+      "id": "bird",
+      "kind": "physical_object",
+      "label": "Blue Ceramic Bird",
+      "aliases": [
+        "Grandmother's blue bird"
+      ]
+    },
+    {
+      "id": "shelf",
+      "kind": "composite",
+      "label": "Hallway Memory Shelf",
+      "aliases": [
+        "memory display"
+      ]
+    },
+    {
+      "id": "collection",
+      "kind": "collection",
+      "label": "Annual Family Ornament Collection",
+      "aliases": [
+        "annual ornaments"
+      ]
+    },
+    {
+      "id": "bird-photo",
+      "kind": "document",
+      "label": "Apartment bird photograph",
+      "aliases": [
+        "1991 snapshot"
+      ]
+    },
+    {
+      "id": "label-observation",
+      "kind": "observation",
+      "label": "Bird manufacturing label observation",
+      "aliases": [
+        "underside inscription"
+      ]
+    },
+    {
+      "id": "account",
+      "kind": "account",
+      "label": "Elena bird interview transcript",
+      "aliases": [
+        "Elena recollection"
+      ]
+    },
+    {
+      "id": "stone",
+      "kind": "physical_object",
+      "label": "Smooth river stone",
+      "aliases": [
+        "lake pebble"
+      ]
+    },
+    {
+      "id": "lake-photo",
+      "kind": "document",
+      "label": "Calder lake photograph",
+      "aliases": [
+        "trip picture"
+      ]
+    },
+    {
+      "id": "ticket",
+      "kind": "physical_object",
+      "label": "Concert ticket",
+      "aliases": [
+        "2012 admission stub"
+      ]
+    },
+    {
+      "id": "letter",
+      "kind": "document",
+      "label": "Sealed handwritten letter",
+      "aliases": [
+        "sealed correspondence"
+      ]
+    },
+    {
+      "id": "ornament",
+      "kind": "physical_object",
+      "label": "2014 first-home ornament",
+      "aliases": [
+        "first house decoration"
+      ]
+    },
+    {
+      "id": "key",
+      "kind": "physical_object",
+      "label": "Small brass key",
+      "aliases": [
+        "cabinet key"
+      ]
+    },
+    {
+      "id": "elena",
+      "kind": "person",
+      "label": "Elena Marlow",
+      "aliases": []
+    },
+    {
+      "id": "ruth",
+      "kind": "person",
+      "label": "Ruth Marlow",
+      "aliases": []
+    },
+    {
+      "id": "leo",
+      "kind": "person",
+      "label": "Leo Marlow",
+      "aliases": []
+    },
+    {
+      "id": "maya",
+      "kind": "person",
+      "label": "Maya Calder",
+      "aliases": []
+    },
+    {
+      "id": "jonah",
+      "kind": "person",
+      "label": "Jonah Calder",
+      "aliases": []
+    },
+    {
+      "id": "eli",
+      "kind": "person",
+      "label": "Eli Hartwell",
+      "aliases": []
+    },
+    {
+      "id": "hallway",
+      "kind": "place",
+      "label": "Hallway",
+      "aliases": []
+    },
+    {
+      "id": "study",
+      "kind": "place",
+      "label": "Study",
+      "aliases": []
+    },
+    {
+      "id": "attic",
+      "kind": "place",
+      "label": "Attic",
+      "aliases": []
+    }
+  ],
+  "sources": [
+    {
+      "ref": "OBJ-0001/EVID-001",
+      "path": "sources/OBJ-0001--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "bird"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0001/EVID-002",
+      "path": "sources/OBJ-0001--EVID-002.txt",
+      "derived_from": [],
+      "entities": [
+        "bird"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0001/EVID-003",
+      "path": "sources/OBJ-0001--EVID-003.txt",
+      "derived_from": [
+        "OBJ-0004/EVID-001"
+      ],
+      "entities": [
+        "bird"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0001/EVID-004",
+      "path": "sources/OBJ-0001--EVID-004.txt",
+      "derived_from": [
+        "OBJ-0001/EVID-003"
+      ],
+      "entities": [
+        "bird"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0001/EVID-006",
+      "path": "sources/OBJ-0001--EVID-006.txt",
+      "derived_from": [],
+      "entities": [
+        "bird"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0001/EVID-007",
+      "path": "sources/OBJ-0001--EVID-007.txt",
+      "derived_from": [],
+      "entities": [
+        "bird"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0001/EVID-008",
+      "path": "sources/OBJ-0001--EVID-008.txt",
+      "derived_from": [],
+      "entities": [
+        "bird"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0001/EVID-009",
+      "path": "sources/OBJ-0001--EVID-009.txt",
+      "derived_from": [],
+      "entities": [
+        "bird"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "DISPLAY-0001/EVID-001",
+      "path": "sources/DISPLAY-0001--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "lake-photo",
+        "shelf"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "DISPLAY-0001/EVID-002",
+      "path": "sources/DISPLAY-0001--EVID-002.txt",
+      "derived_from": [],
+      "entities": [
+        "shelf",
+        "ticket"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "DISPLAY-0001/EVID-003",
+      "path": "sources/DISPLAY-0001--EVID-003.txt",
+      "derived_from": [],
+      "entities": [
+        "shelf"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "DISPLAY-0001/EVID-004",
+      "path": "sources/DISPLAY-0001--EVID-004.txt",
+      "derived_from": [],
+      "entities": [
+        "shelf"
+      ],
+      "disclosure": "acknowledge"
+    },
+    {
+      "ref": "DISPLAY-0001/EVID-005",
+      "path": "sources/DISPLAY-0001--EVID-005.txt",
+      "derived_from": [
+        "OBJ-0008/EVID-001"
+      ],
+      "entities": [
+        "letter",
+        "shelf"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "COLLECTION-0001/EVID-001",
+      "path": "sources/COLLECTION-0001--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "collection"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "COLLECTION-0001/EVID-002",
+      "path": "sources/COLLECTION-0001--EVID-002.txt",
+      "derived_from": [],
+      "entities": [
+        "collection"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "COLLECTION-0001/EVID-003",
+      "path": "sources/COLLECTION-0001--EVID-003.txt",
+      "derived_from": [],
+      "entities": [
+        "collection"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "COLLECTION-0001/EVID-004",
+      "path": "sources/COLLECTION-0001--EVID-004.txt",
+      "derived_from": [],
+      "entities": [
+        "collection"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "COLLECTION-0001/EVID-005",
+      "path": "sources/COLLECTION-0001--EVID-005.txt",
+      "derived_from": [],
+      "entities": [
+        "collection"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0002/EVID-001",
+      "path": "sources/OBJ-0002--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "bird-photo"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0002/EVID-002",
+      "path": "sources/OBJ-0002--EVID-002.txt",
+      "derived_from": [],
+      "entities": [
+        "bird-photo"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0003/EVID-001",
+      "path": "sources/OBJ-0003--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "label-observation"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0004/EVID-001",
+      "path": "sources/OBJ-0004--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "account",
+        "bird"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0004/EVID-002",
+      "path": "sources/OBJ-0004--EVID-002.txt",
+      "derived_from": [],
+      "entities": [
+        "account",
+        "bird"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0005/EVID-001",
+      "path": "sources/OBJ-0005--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "stone"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0005/EVID-002",
+      "path": "sources/OBJ-0005--EVID-002.txt",
+      "derived_from": [],
+      "entities": [
+        "stone"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0006/EVID-001",
+      "path": "sources/OBJ-0006--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "lake-photo"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0007/EVID-001",
+      "path": "sources/OBJ-0007--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "ticket"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0007/EVID-002",
+      "path": "sources/OBJ-0007--EVID-002.txt",
+      "derived_from": [],
+      "entities": [
+        "ticket"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0008/EVID-001",
+      "path": "sources/OBJ-0008--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "letter"
+      ],
+      "disclosure": "acknowledge"
+    },
+    {
+      "ref": "OBJ-0009/EVID-001",
+      "path": "sources/OBJ-0009--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "ornament"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0010/EVID-001",
+      "path": "sources/OBJ-0010--EVID-001.txt",
+      "derived_from": [],
+      "entities": [
+        "key"
+      ],
+      "disclosure": "public"
+    },
+    {
+      "ref": "OBJ-0010/EVID-002",
+      "path": "sources/OBJ-0010--EVID-002.txt",
+      "derived_from": [],
+      "entities": [
+        "key"
+      ],
+      "disclosure": "public"
+    }
+  ],
+  "assertions": [
+    {
+      "ref": "OBJ-0001/CLM-001",
+      "subject": "bird",
+      "predicate": "possessed_by",
+      "object": "Elena Marlow",
+      "source_refs": [
+        "OBJ-0001/EVID-001"
+      ],
+      "attributed_to": "Fictional curator",
+      "basis": "observation",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0001-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": {
+        "expression": "By June 1991",
+        "precision": "by",
+        "start": null,
+        "end": "1991-07-01"
+      },
+      "event": null
+    },
+    {
+      "ref": "OBJ-0001/CLM-002",
+      "subject": "bird",
+      "predicate": "giver",
+      "object": "Ruth Marlow",
+      "source_refs": [
+        "OBJ-0001/EVID-002"
+      ],
+      "attributed_to": "Elena Marlow",
+      "basis": "account",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0001-CLM-002",
+      "derived_from": [],
+      "conflicts_with": [
+        "OBJ-0004/CLM-002"
+      ],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0001/CLM-003",
+      "subject": "bird",
+      "predicate": "acquisition_date",
+      "object": "Unknown",
+      "source_refs": [],
+      "attributed_to": "Fictional curator",
+      "basis": "unknown",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0001-CLM-003",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0004/CLM-001",
+      "subject": "bird",
+      "predicate": "gift_quote",
+      "object": "Ruth gave me the blue ceramic bird, but I do not remember the year.",
+      "source_refs": [
+        "OBJ-0004/EVID-001"
+      ],
+      "attributed_to": "Elena Marlow",
+      "basis": "quotation",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0004-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0004/CLM-002",
+      "subject": "bird",
+      "predicate": "giver",
+      "object": "Leo Marlow",
+      "source_refs": [
+        "OBJ-0004/EVID-002"
+      ],
+      "attributed_to": "Leo Marlow",
+      "basis": "account",
+      "recorded_at": "2026-08-03T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0004-CLM-002",
+      "derived_from": [],
+      "conflicts_with": [
+        "OBJ-0001/CLM-002"
+      ],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0001/CLM-004",
+      "subject": "bird",
+      "predicate": "gift_paraphrase",
+      "object": "Elena remembers a gift from Ruth.",
+      "source_refs": [
+        "OBJ-0001/EVID-003"
+      ],
+      "attributed_to": "Elena Marlow via fictional paraphraser",
+      "basis": "paraphrase",
+      "recorded_at": "2026-08-10T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0001-CLM-004",
+      "derived_from": [
+        "OBJ-0004/CLM-001"
+      ],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0001/CLM-005",
+      "subject": "bird",
+      "predicate": "gift_repeat",
+      "object": "A repeated paraphrase of Elena’s gift account.",
+      "source_refs": [
+        "OBJ-0001/EVID-004"
+      ],
+      "attributed_to": "Fictional summarizer",
+      "basis": "paraphrase",
+      "recorded_at": "2026-08-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0001-CLM-005",
+      "derived_from": [
+        "OBJ-0001/CLM-004"
+      ],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0001/CLM-006",
+      "subject": "bird",
+      "predicate": "location",
+      "object": "Hallway",
+      "source_refs": [
+        "OBJ-0001/EVID-006"
+      ],
+      "attributed_to": "Fictional move-log curator",
+      "basis": "observation",
+      "recorded_at": "2024-05-02T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0001-CLM-006",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": {
+        "expression": "2020-01-01 to 2024-05-01",
+        "precision": "interval",
+        "start": "2020-01-01",
+        "end": "2024-05-01"
+      },
+      "event": null
+    },
+    {
+      "ref": "OBJ-0001/CLM-007",
+      "subject": "bird",
+      "predicate": "location",
+      "object": "Study",
+      "source_refs": [
+        "OBJ-0001/EVID-007"
+      ],
+      "attributed_to": "Fictional move-log curator",
+      "basis": "observation",
+      "recorded_at": "2024-05-02T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0001-CLM-007",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": {
+        "expression": "from 2024-05-01",
+        "precision": "open",
+        "start": "2024-05-01",
+        "end": null
+      },
+      "event": "OBJ-0001/EVT-002"
+    },
+    {
+      "ref": "OBJ-0001/CLM-008",
+      "subject": "bird",
+      "predicate": "location",
+      "object": "Study",
+      "source_refs": [
+        "OBJ-0001/EVID-008"
+      ],
+      "attributed_to": "Fictional move-log curator",
+      "basis": "observation",
+      "recorded_at": "2026-08-01T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0001-CLM-008",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": "OBJ-0001/CLM-007",
+      "time": {
+        "expression": "from 2024-05-03",
+        "precision": "open",
+        "start": "2024-05-03",
+        "end": null
+      },
+      "event": "OBJ-0001/EVT-002"
+    },
+    {
+      "ref": "OBJ-0001/CLM-009",
+      "subject": "bird",
+      "predicate": "location",
+      "object": "Attic",
+      "source_refs": [
+        "OBJ-0001/EVID-009"
+      ],
+      "attributed_to": "Leo Marlow",
+      "basis": "account",
+      "recorded_at": "2026-08-02T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0001-CLM-009",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": {
+        "expression": "2023",
+        "precision": "year",
+        "start": "2023-01-01",
+        "end": "2024-01-01"
+      },
+      "event": null
+    },
+    {
+      "ref": "OBJ-0002/CLM-001",
+      "subject": "bird-photo",
+      "predicate": "photograph_date",
+      "object": "1991-06-15",
+      "source_refs": [
+        "OBJ-0002/EVID-001"
+      ],
+      "attributed_to": "Elena Marlow",
+      "basis": "observation",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0002-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": {
+        "expression": "1991-06-15",
+        "precision": "exact",
+        "start": "1991-06-15",
+        "end": "1991-06-15"
+      },
+      "event": null
+    },
+    {
+      "ref": "OBJ-0002/CLM-002",
+      "subject": "bird-photo",
+      "predicate": "digitization_date",
+      "object": "2026-07-20",
+      "source_refs": [
+        "OBJ-0002/EVID-002"
+      ],
+      "attributed_to": "Fictional digitizer",
+      "basis": "observation",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0002-CLM-002",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": {
+        "expression": "2026-07-20",
+        "precision": "exact",
+        "start": "2026-07-20",
+        "end": "2026-07-20"
+      },
+      "event": null
+    },
+    {
+      "ref": "OBJ-0003/CLM-001",
+      "subject": "label-observation",
+      "predicate": "manufacturing_label",
+      "object": "Made in Portugal",
+      "source_refs": [
+        "OBJ-0003/EVID-001"
+      ],
+      "attributed_to": "Fictional inspector",
+      "basis": "observation",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0003-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0005/CLM-001",
+      "subject": "stone",
+      "predicate": "geological_origin",
+      "object": "Unknown",
+      "source_refs": [
+        "OBJ-0005/EVID-001"
+      ],
+      "attributed_to": "Fictional inspector",
+      "basis": "unknown",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0005-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0005/CLM-002",
+      "subject": "stone",
+      "predicate": "shared_provenance",
+      "object": "Unknown",
+      "source_refs": [
+        "OBJ-0005/EVID-002"
+      ],
+      "attributed_to": "Fictional inspector",
+      "basis": "unknown",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0005-CLM-002",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0006/CLM-001",
+      "subject": "lake-photo",
+      "predicate": "photograph_date",
+      "object": "1998-07-18",
+      "source_refs": [
+        "OBJ-0006/EVID-001"
+      ],
+      "attributed_to": "Maya Calder",
+      "basis": "observation",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0006-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": {
+        "expression": "1998-07-18",
+        "precision": "exact",
+        "start": "1998-07-18",
+        "end": "1998-07-18"
+      },
+      "event": null
+    },
+    {
+      "ref": "OBJ-0007/CLM-001",
+      "subject": "ticket",
+      "predicate": "meaning",
+      "object": "Beginning of friendship",
+      "source_refs": [
+        "OBJ-0007/EVID-001"
+      ],
+      "attributed_to": "Maya Calder",
+      "basis": "account",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0007-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0007/CLM-002",
+      "subject": "ticket",
+      "predicate": "meaning",
+      "object": "A difficult evening",
+      "source_refs": [
+        "OBJ-0007/EVID-002"
+      ],
+      "attributed_to": "Jonah Calder",
+      "basis": "account",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0007-CLM-002",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0008/CLM-001",
+      "subject": "letter",
+      "predicate": "contents",
+      "object": "SYNTHETIC-RESTRICTED-ORCHID-482",
+      "source_refs": [
+        "OBJ-0008/EVID-001"
+      ],
+      "attributed_to": "Fictional letter writer",
+      "basis": "account",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0008-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0009/CLM-001",
+      "subject": "ornament",
+      "predicate": "marked_year",
+      "object": "2014",
+      "source_refs": [
+        "OBJ-0009/EVID-001"
+      ],
+      "attributed_to": "Fictional inspector",
+      "basis": "observation",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0009-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "OBJ-0010/CLM-001",
+      "subject": "key",
+      "predicate": "creation_date",
+      "object": "around 1980",
+      "source_refs": [
+        "OBJ-0010/EVID-001"
+      ],
+      "attributed_to": "Elena Marlow",
+      "basis": "account",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0010-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": {
+        "expression": "around 1980",
+        "precision": "approximate",
+        "start": "1978-01-01",
+        "end": "1983-01-01"
+      },
+      "event": null
+    },
+    {
+      "ref": "OBJ-0010/CLM-002",
+      "subject": "key",
+      "predicate": "opens",
+      "object": "Unknown",
+      "source_refs": [
+        "OBJ-0010/EVID-002"
+      ],
+      "attributed_to": "Fictional inspector",
+      "basis": "unknown",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-OBJ-0010-CLM-002",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "DISPLAY-0001/CLM-001",
+      "subject": "lake-photo",
+      "predicate": "trip_year",
+      "object": "1998",
+      "source_refs": [
+        "DISPLAY-0001/EVID-001"
+      ],
+      "attributed_to": "Fictional curator",
+      "basis": "observation",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-DISPLAY-0001-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": {
+        "expression": "1998",
+        "precision": "year",
+        "start": "1998-01-01",
+        "end": "1999-01-01"
+      },
+      "event": null
+    },
+    {
+      "ref": "DISPLAY-0001/CLM-002",
+      "subject": "ticket",
+      "predicate": "kept_by",
+      "object": "Maya and Jonah Calder",
+      "source_refs": [
+        "DISPLAY-0001/EVID-002"
+      ],
+      "attributed_to": "Maya Calder",
+      "basis": "account",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-DISPLAY-0001-CLM-002",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "DISPLAY-0001/CLM-005",
+      "subject": "stone",
+      "predicate": "acquisition_date",
+      "object": "Unknown",
+      "source_refs": [],
+      "attributed_to": "Fictional curator",
+      "basis": "unknown",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-DISPLAY-0001-CLM-005",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "COLLECTION-0001/CLM-001",
+      "subject": "collection",
+      "predicate": "membership_rule",
+      "object": "One ornament per year",
+      "source_refs": [
+        "COLLECTION-0001/EVID-001",
+        "COLLECTION-0001/EVID-002"
+      ],
+      "attributed_to": "Fictional curator",
+      "basis": "observation",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-COLLECTION-0001-CLM-001",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "COLLECTION-0001/CLM-003",
+      "subject": "collection",
+      "predicate": "missing_year",
+      "object": "2017",
+      "source_refs": [
+        "COLLECTION-0001/EVID-001"
+      ],
+      "attributed_to": "Fictional curator",
+      "basis": "observation",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-COLLECTION-0001-CLM-003",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "COLLECTION-0001/CLM-004",
+      "subject": "collection",
+      "predicate": "2017_account",
+      "object": "Eli recalls a purchase",
+      "source_refs": [
+        "COLLECTION-0001/EVID-004"
+      ],
+      "attributed_to": "Eli Hartwell",
+      "basis": "account",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-COLLECTION-0001-CLM-004",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "COLLECTION-0001/CLM-005",
+      "subject": "collection",
+      "predicate": "2017_never_existed",
+      "object": "Unknown",
+      "source_refs": [
+        "COLLECTION-0001/EVID-001",
+        "COLLECTION-0001/EVID-004"
+      ],
+      "attributed_to": "Fictional curator",
+      "basis": "unknown",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-COLLECTION-0001-CLM-005",
+      "derived_from": [],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    },
+    {
+      "ref": "DISPLAY-0001/CLM-006",
+      "subject": "letter",
+      "predicate": "summary",
+      "object": "SYNTHETIC-DERIVED-ORCHID-482",
+      "source_refs": [
+        "DISPLAY-0001/EVID-005"
+      ],
+      "attributed_to": "Fictional summarizer",
+      "basis": "paraphrase",
+      "recorded_at": "2026-07-20T12:00:00Z",
+      "decision_ref": "SIM-DISPLAY-0001-CLM-006",
+      "derived_from": [
+        "OBJ-0008/CLM-001"
+      ],
+      "conflicts_with": [],
+      "supersedes": null,
+      "time": null,
+      "event": null
+    }
+  ],
+  "decisions": [
+    {
+      "id": "SIM-OBJ-0001-CLM-001",
+      "scope": "claim",
+      "target": "OBJ-0001/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0001-CLM-002",
+      "scope": "claim",
+      "target": "OBJ-0001/CLM-002",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0001-CLM-003",
+      "scope": "claim",
+      "target": "OBJ-0001/CLM-003",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0004-CLM-001",
+      "scope": "claim",
+      "target": "OBJ-0004/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0004-CLM-002",
+      "scope": "claim",
+      "target": "OBJ-0004/CLM-002",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-08-03T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0001-CLM-004",
+      "scope": "claim",
+      "target": "OBJ-0001/CLM-004",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-08-10T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0001-CLM-005",
+      "scope": "claim",
+      "target": "OBJ-0001/CLM-005",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-08-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0001-CLM-006",
+      "scope": "claim",
+      "target": "OBJ-0001/CLM-006",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2024-05-02T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0001-CLM-007",
+      "scope": "claim",
+      "target": "OBJ-0001/CLM-007",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2024-05-02T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0001-CLM-008",
+      "scope": "claim",
+      "target": "OBJ-0001/CLM-008",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-08-01T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0001-CLM-009",
+      "scope": "claim",
+      "target": "OBJ-0001/CLM-009",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-08-02T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0002-CLM-001",
+      "scope": "claim",
+      "target": "OBJ-0002/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0002-CLM-002",
+      "scope": "claim",
+      "target": "OBJ-0002/CLM-002",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0003-CLM-001",
+      "scope": "claim",
+      "target": "OBJ-0003/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0005-CLM-001",
+      "scope": "claim",
+      "target": "OBJ-0005/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0005-CLM-002",
+      "scope": "claim",
+      "target": "OBJ-0005/CLM-002",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0006-CLM-001",
+      "scope": "claim",
+      "target": "OBJ-0006/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0007-CLM-001",
+      "scope": "claim",
+      "target": "OBJ-0007/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0007-CLM-002",
+      "scope": "claim",
+      "target": "OBJ-0007/CLM-002",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0008-CLM-001",
+      "scope": "claim",
+      "target": "OBJ-0008/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0009-CLM-001",
+      "scope": "claim",
+      "target": "OBJ-0009/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0010-CLM-001",
+      "scope": "claim",
+      "target": "OBJ-0010/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-OBJ-0010-CLM-002",
+      "scope": "claim",
+      "target": "OBJ-0010/CLM-002",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-DISPLAY-0001-CLM-001",
+      "scope": "claim",
+      "target": "DISPLAY-0001/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-DISPLAY-0001-CLM-002",
+      "scope": "claim",
+      "target": "DISPLAY-0001/CLM-002",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-DISPLAY-0001-CLM-005",
+      "scope": "claim",
+      "target": "DISPLAY-0001/CLM-005",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-COLLECTION-0001-CLM-001",
+      "scope": "claim",
+      "target": "COLLECTION-0001/CLM-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-COLLECTION-0001-CLM-003",
+      "scope": "claim",
+      "target": "COLLECTION-0001/CLM-003",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-COLLECTION-0001-CLM-004",
+      "scope": "claim",
+      "target": "COLLECTION-0001/CLM-004",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-COLLECTION-0001-CLM-005",
+      "scope": "claim",
+      "target": "COLLECTION-0001/CLM-005",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-DISPLAY-0001-CLM-006",
+      "scope": "claim",
+      "target": "DISPLAY-0001/CLM-006",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    },
+    {
+      "id": "SIM-QA-BIRD",
+      "scope": "qa",
+      "target": "OBJ-0001/QA-001",
+      "action": "accept_for_demo",
+      "simulated": true,
+      "actor": "Simulated reviewer",
+      "recorded_at": "2026-07-20T12:00:00Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "OBJ-0001/EVT-002",
+      "kind": "Moved",
+      "subject": "bird",
+      "when": {
+        "expression": "early May 2024",
+        "precision": "approximate",
+        "start": "2024-05-01",
+        "end": "2024-05-05"
+      },
+      "source_refs": [
+        "OBJ-0001/EVID-007",
+        "OBJ-0001/EVID-008"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "subject": "bird-photo",
+      "predicate": "depicts",
+      "object": "bird",
+      "source_refs": [
+        "OBJ-0001/EVID-001",
+        "OBJ-0002/EVID-001"
+      ]
+    },
+    {
+      "subject": "label-observation",
+      "predicate": "observes",
+      "object": "bird",
+      "source_refs": [
+        "OBJ-0003/EVID-001"
+      ]
+    },
+    {
+      "subject": "shelf",
+      "predicate": "contains",
+      "object": "stone",
+      "source_refs": [
+        "DISPLAY-0001/EVID-003"
+      ]
+    },
+    {
+      "subject": "shelf",
+      "predicate": "contains",
+      "object": "lake-photo",
+      "source_refs": [
+        "DISPLAY-0001/EVID-001"
+      ]
+    },
+    {
+      "subject": "shelf",
+      "predicate": "contains",
+      "object": "ticket",
+      "source_refs": [
+        "DISPLAY-0001/EVID-002"
+      ]
+    },
+    {
+      "subject": "shelf",
+      "predicate": "contains",
+      "object": "letter",
+      "source_refs": [
+        "DISPLAY-0001/EVID-004"
+      ]
+    },
+    {
+      "subject": "stone",
+      "predicate": "displayed_with",
+      "object": "lake-photo",
+      "source_refs": [
+        "DISPLAY-0001/EVID-003"
+      ]
+    },
+    {
+      "subject": "collection",
+      "predicate": "contains",
+      "object": "ornament",
+      "source_refs": [
+        "COLLECTION-0001/EVID-001",
+        "OBJ-0009/EVID-001"
+      ]
+    }
+  ]
+}

@@ -52,3 +52,14 @@ working-notes/
 *.zip
 Racette_House_*
 HKL_*
+
+# Reproducible local experiment runs
+work/
+
+# Explicit public research package (the private HKL_* exclusion stays above).
+!/hkl_workbench/
+!/hkl_workbench/*.py
+!/hkl_workbench/*.json
+
+# Reviewed packet containing only independently fictional public sources.
+!/research/artifacts/fictional-public-packet.zip

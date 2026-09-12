@@ -1,0 +1,77 @@
+{
+  "verification": "Fresh local Git clone, fresh virtual environment, pinned dependencies installed using --no-index from prepared local wheels.",
+  "timestamp_utc": "2026-09-08T05:34:56.622294+00:00",
+  "commands": [
+    {
+      "command": "python -m unittest discover -v",
+      "exit_code": 0,
+      "summary": [
+        "Ran 27 tests in 10.984s",
+        "OK"
+      ]
+    },
+    {
+      "command": "python validate_record.py ceramic_bird.json",
+      "exit_code": 0,
+      "summary": "VALID: ceramic_bird.json"
+    },
+    {
+      "command": "python validate_record.py composite_memory_shelf.json",
+      "exit_code": 0,
+      "summary": "VALID: composite_memory_shelf.json"
+    },
+    {
+      "command": "python validate_record.py annual_ornament_collection.json",
+      "exit_code": 0,
+      "summary": "VALID: annual_ornament_collection.json"
+    },
+    {
+      "command": "python -m hkl_workbench run --output work/final-run",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m hkl_workbench verify-packet --packet work/final-run/packet",
+      "exit_code": 0
+    }
+  ],
+  "environment_note": "Git trust scoped to this fresh checkout for the separate Windows sandbox account; no global Git settings changed.",
+  "run_provenance": {
+    "code_hashes": {
+      "hkl_workbench/__init__.py": "adc36b31ec44f21c117f6a26e729f5ad10732e539440677e691fd6ab8b5f39f3",
+      "hkl_workbench/__main__.py": "9bc3387635277eb70dbf84af62abbd378f31bad5e3f70f3e907a458c5874f89b",
+      "hkl_workbench/answers.py": "69658c3ce0f822f6fac0bf57e7683c473eb1dc9a034913688ee5c2c852a33f8e",
+      "hkl_workbench/common.py": "c9f69532cac1a79ff15c479731c1e9179c1ccbfd68a03cbf847c9ec5a67a7fb8",
+      "hkl_workbench/evaluation.py": "869e32059c619232ef71c0b1cb4af0d2d2d29f6002a8dfd8b30a9482877b058f",
+      "hkl_workbench/experiments.py": "c2e391b816bc0278ebd17b4c231fc4f0c166f1b727d051320dd9af0e0dc17480",
+      "hkl_workbench/model.py": "179cdad4dd9313a81842e4d033524ec7828629a23fd0bd27e32373b053d78c30",
+      "hkl_workbench/packet_reader.py": "e45bc1e5a66b544831f9165b3e4fb58b829de85b27d10eea91b29c5837dd9e9c",
+      "hkl_workbench/preservation.py": "35eaca3b24b83a07f63af4bf1ced60e701398959ef81f7ecb294b9ea2d0635a8",
+      "hkl_workbench/profile.schema.json": "483005f44c607798af15204ae708971abca639120da0c502ce3b79b8a53928a7",
+      "hkl_workbench/retrieval.py": "86a31074f83fdd233e70e60998285e7c812039b1a30f6e48a406df5f9f4e9e54",
+      "hkl_workbench/temporal.py": "08b887bf78d43c1fb7afed8db2941c2624fb8d67f9dee60a36c3961327404611",
+      "household_record.schema.json": "5bdcdd4cb03d2f53fc8219e80440cc7337c48b5e9d81df70a5a5784568363406",
+      "test_validate_record.py": "f19cf3a74098d7f69a10e250c66f10c7654af212ba297f69b52deb047b6f2a6d",
+      "test_workbench.py": "af1ca4384027275dbe68ceaed7e73f6e9f6ea53cc656cef30a3f10b1182ef443",
+      "validate_record.py": "0f931fe20460b06d343be4aaa89372770dfc373dffd9e008d2b7db9cafcf6d26"
+    },
+    "code_revision": "aefc9cab5cabc808af21ec70193b9497baa3b490",
+    "command": "python -m hkl_workbench run --output work/final-run",
+    "contract_sha256": "a7593c60d6a9c8c90108478d3e0d3e21090f9b5c6e640d70c334a1d5227e7c55",
+    "dependencies": {
+      "attrs": "26.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.6.3"
+    },
+    "dirty_paths": [],
+    "dirty_worktree": false,
+    "fixture_manifest_sha256": "d34992d256795e53ae105b32d8cff645fa21b75d6b5f6c5269f52dc77a21d352",
+    "platform": "Windows",
+    "profile_sha256": "e294894cfe5425c9e07f3dc13e5c3f9f42c8307c489eb66b6b863014ac13c39d",
+    "profile_version": "1.0",
+    "python": "3.14.7",
+    "schema_sha256": "5bdcdd4cb03d2f53fc8219e80440cc7337c48b5e9d81df70a5a5784568363406",
+    "timestamp_utc": "2026-09-08T05:35:09.671103+00:00"
+  }
+}

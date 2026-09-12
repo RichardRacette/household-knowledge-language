@@ -101,3 +101,17 @@ Evidence can therefore support a record while remaining restricted.
 The system should become no more certain than the evidence allows.
 
 When uncertainty remains, preserving that uncertainty is more accurate than manufacturing a definitive answer.
+
+## Executable scope
+
+The original validator enforces JSON Schema structure and formats. It does not verify
+references, natural-language support, privacy enforcement or approval identity.
+
+The separate [experimental profile](research/contract.md) checks qualified references,
+source derivations, scoped simulated decisions and bounded temporal/entity distinctions.
+Its deterministic reader preserves attribution and uncertainty in a structured answer plan.
+A quotation's exact recovery from synthetic source bytes is tested separately from its
+content's epistemic state. Correct recovery does not turn Reported into Known.
+
+All decisions in the experiments are simulated. No named reviewer is authenticated, no
+family truth is settled and no private archive policy or source decision is changed.

@@ -1,0 +1,43 @@
+{
+  "baseline_commit": "e5391af4905f1c615e1b34c51692b02fd817cb21",
+  "timestamp_utc": "2026-09-08T04:40:25.453496+00:00",
+  "initial_checkout_clean": true,
+  "implementation_unchanged": true,
+  "dirty_paths_at_capture": [
+    " M .gitignore",
+    "?? .gitattributes",
+    "?? docs/research/"
+  ],
+  "python": "3.14.7",
+  "dependencies": {
+    "jsonschema": "4.26.0",
+    "attrs": "26.1.0",
+    "jsonschema-specifications": "2025.9.1",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.6.3"
+  },
+  "schema_sha256": "1d47a47758e6b84296e240ccb705f2283c56b1652baffc2a18ca60c8de0dc6b8",
+  "runs": [
+    {
+      "command": ".venv/Scripts/python.exe -m unittest -v test_validate_record.py",
+      "exit_code": 0,
+      "output": "test_confidence_above_one_is_rejected (test_validate_record.HouseholdRecordValidationTests.test_confidence_above_one_is_rejected) ... ok\ntest_fictional_ceramic_bird_is_valid (test_validate_record.HouseholdRecordValidationTests.test_fictional_ceramic_bird_is_valid) ... ok\ntest_invalid_privacy_class_is_rejected (test_validate_record.HouseholdRecordValidationTests.test_invalid_privacy_class_is_rejected) ... ok\ntest_invalid_record_id_is_rejected (test_validate_record.HouseholdRecordValidationTests.test_invalid_record_id_is_rejected) ... ok\ntest_missing_family_meaning_is_rejected (test_validate_record.HouseholdRecordValidationTests.test_missing_family_meaning_is_rejected) ... ok\ntest_unknown_is_a_valid_epistemic_state (test_validate_record.HouseholdRecordValidationTests.test_unknown_is_a_valid_epistemic_state) ... ok\ntest_unsupported_epistemic_state_is_rejected (test_validate_record.HouseholdRecordValidationTests.test_unsupported_epistemic_state_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.518s\n\nOK\n"
+    },
+    {
+      "command": ".venv/Scripts/python.exe validate_record.py ceramic_bird.json",
+      "exit_code": 0,
+      "output": "VALID: ceramic_bird.json\n"
+    },
+    {
+      "command": ".venv/Scripts/python.exe validate_record.py composite_memory_shelf.json",
+      "exit_code": 0,
+      "output": "VALID: composite_memory_shelf.json\n"
+    },
+    {
+      "command": ".venv/Scripts/python.exe validate_record.py annual_ornament_collection.json",
+      "exit_code": 0,
+      "output": "VALID: annual_ornament_collection.json\n"
+    }
+  ],
+  "initial_setup_failure": "System Python lacked jsonschema; installed declared requirements in isolated venv before successful baseline."
+}

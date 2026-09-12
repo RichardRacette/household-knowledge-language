@@ -1,0 +1,432 @@
+{
+  "version": "1",
+  "questions": [
+    {
+      "id": "Q01",
+      "text": "Who possessed the blue ceramic bird by 1991?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "possessed_by"
+      },
+      "expected_evidence": [
+        "OBJ-0001/EVID-001"
+      ],
+      "expected_claims": [
+        "OBJ-0001/CLM-001"
+      ],
+      "expected_mode": "Direct"
+    },
+    {
+      "id": "Q02",
+      "text": "When was the blue ceramic bird acquired?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "acquisition_date"
+      },
+      "expected_evidence": [],
+      "expected_claims": [
+        "OBJ-0001/CLM-003"
+      ],
+      "expected_mode": "Unknown"
+    },
+    {
+      "id": "Q03",
+      "text": "What exactly did Elena say about the gift?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "gift_quote"
+      },
+      "expected_evidence": [
+        "OBJ-0004/EVID-001"
+      ],
+      "expected_claims": [
+        "OBJ-0004/CLM-001"
+      ],
+      "expected_mode": "Qualified"
+    },
+    {
+      "id": "Q04",
+      "text": "Who gave the blue ceramic bird to Elena: Ruth or Leo?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "giver"
+      },
+      "expected_evidence": [
+        "OBJ-0001/EVID-002",
+        "OBJ-0004/EVID-002"
+      ],
+      "expected_claims": [
+        "OBJ-0001/CLM-002",
+        "OBJ-0004/CLM-002"
+      ],
+      "expected_mode": "Qualified"
+    },
+    {
+      "id": "Q05",
+      "text": "What is the paraphrase of Elena’s bird account?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "gift_paraphrase"
+      },
+      "expected_evidence": [
+        "OBJ-0001/EVID-003",
+        "OBJ-0004/EVID-001"
+      ],
+      "expected_claims": [
+        "OBJ-0001/CLM-004"
+      ],
+      "expected_mode": "Qualified"
+    },
+    {
+      "id": "Q06",
+      "text": "Where was the bird in 2022?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "location",
+        "valid_at": "2022-06-01"
+      },
+      "expected_evidence": [
+        "OBJ-0001/EVID-006"
+      ],
+      "expected_claims": [
+        "OBJ-0001/CLM-006"
+      ],
+      "expected_mode": "Direct"
+    },
+    {
+      "id": "Q07",
+      "text": "Where was the bird on May 2, 2024, as known in June 2024?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "location",
+        "valid_at": "2024-05-02",
+        "as_of": "2024-06-01T00:00:00Z"
+      },
+      "expected_evidence": [
+        "OBJ-0001/EVID-007"
+      ],
+      "expected_claims": [
+        "OBJ-0001/CLM-007"
+      ],
+      "expected_mode": "Direct"
+    },
+    {
+      "id": "Q08",
+      "text": "After the correction, where was the bird on May 2, 2024?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "location",
+        "valid_at": "2024-05-02",
+        "as_of": "2026-09-01T00:00:00Z"
+      },
+      "expected_evidence": [],
+      "expected_claims": [],
+      "expected_mode": "Unknown"
+    },
+    {
+      "id": "Q09",
+      "text": "Which locations are reported for the bird during 2023?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "location",
+        "valid_at": "2023-06-01"
+      },
+      "expected_evidence": [
+        "OBJ-0001/EVID-006",
+        "OBJ-0001/EVID-009"
+      ],
+      "expected_claims": [
+        "OBJ-0001/CLM-006",
+        "OBJ-0001/CLM-009"
+      ],
+      "expected_mode": "Qualified"
+    },
+    {
+      "id": "Q10",
+      "text": "When was the apartment bird photograph taken?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird-photo"
+        ],
+        "predicate": "photograph_date"
+      },
+      "expected_evidence": [
+        "OBJ-0002/EVID-001"
+      ],
+      "expected_claims": [
+        "OBJ-0002/CLM-001"
+      ],
+      "expected_mode": "Direct"
+    },
+    {
+      "id": "Q11",
+      "text": "What does the bird manufacturing label read?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "label-observation"
+        ],
+        "predicate": "manufacturing_label"
+      },
+      "expected_evidence": [
+        "OBJ-0003/EVID-001"
+      ],
+      "expected_claims": [
+        "OBJ-0003/CLM-001"
+      ],
+      "expected_mode": "Direct"
+    },
+    {
+      "id": "Q12",
+      "text": "Does the bird label establish where its clay originated?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "geological_origin"
+      },
+      "expected_evidence": [],
+      "expected_claims": [],
+      "expected_mode": "Unknown"
+    },
+    {
+      "id": "Q13",
+      "text": "Did the river stone and lake photograph share an origin?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "stone"
+        ],
+        "predicate": "shared_provenance"
+      },
+      "expected_evidence": [
+        "OBJ-0005/EVID-002"
+      ],
+      "expected_claims": [
+        "OBJ-0005/CLM-002"
+      ],
+      "expected_mode": "Unknown"
+    },
+    {
+      "id": "Q14",
+      "text": "Which annual ornament year is missing?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "collection"
+        ],
+        "predicate": "missing_year"
+      },
+      "expected_evidence": [
+        "COLLECTION-0001/EVID-001"
+      ],
+      "expected_claims": [
+        "COLLECTION-0001/CLM-003"
+      ],
+      "expected_mode": "Direct"
+    },
+    {
+      "id": "Q15",
+      "text": "Does the missing 2017 ornament mean it never existed?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "collection"
+        ],
+        "predicate": "2017_never_existed"
+      },
+      "expected_evidence": [
+        "COLLECTION-0001/EVID-001",
+        "COLLECTION-0001/EVID-004"
+      ],
+      "expected_claims": [
+        "COLLECTION-0001/CLM-005"
+      ],
+      "expected_mode": "Unknown"
+    },
+    {
+      "id": "Q16",
+      "text": "What does the concert ticket mean to Maya and Jonah?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "ticket"
+        ],
+        "predicate": "meaning"
+      },
+      "expected_evidence": [
+        "OBJ-0007/EVID-001",
+        "OBJ-0007/EVID-002"
+      ],
+      "expected_claims": [
+        "OBJ-0007/CLM-001",
+        "OBJ-0007/CLM-002"
+      ],
+      "expected_mode": "Qualified"
+    },
+    {
+      "id": "Q17",
+      "text": "What are the contents of the sealed letter?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "letter"
+        ],
+        "predicate": "contents"
+      },
+      "expected_evidence": [],
+      "expected_claims": [],
+      "expected_mode": "Private"
+    },
+    {
+      "id": "Q18",
+      "text": "Can the hallway shelf reveal a summary of the sealed letter?",
+      "split": "development",
+      "intent": {
+        "subjects": [
+          "letter"
+        ],
+        "predicate": "summary"
+      },
+      "expected_evidence": [],
+      "expected_claims": [],
+      "expected_mode": "Private"
+    },
+    {
+      "id": "Q19",
+      "text": "When was the cabinet key made?",
+      "split": "holdout",
+      "intent": {
+        "subjects": [
+          "key"
+        ],
+        "predicate": "creation_date"
+      },
+      "expected_evidence": [
+        "OBJ-0010/EVID-001"
+      ],
+      "expected_claims": [
+        "OBJ-0010/CLM-001"
+      ],
+      "expected_mode": "Qualified"
+    },
+    {
+      "id": "Q20",
+      "text": "What date was the 1991 snapshot digitized?",
+      "split": "holdout",
+      "intent": {
+        "subjects": [
+          "bird-photo"
+        ],
+        "predicate": "digitization_date"
+      },
+      "expected_evidence": [
+        "OBJ-0002/EVID-002"
+      ],
+      "expected_claims": [
+        "OBJ-0002/CLM-002"
+      ],
+      "expected_mode": "Direct"
+    },
+    {
+      "id": "Q21",
+      "text": "Which year is inscribed on the first house decoration?",
+      "split": "holdout",
+      "intent": {
+        "subjects": [
+          "ornament"
+        ],
+        "predicate": "marked_year"
+      },
+      "expected_evidence": [
+        "OBJ-0009/EVID-001"
+      ],
+      "expected_claims": [
+        "OBJ-0009/CLM-001"
+      ],
+      "expected_mode": "Direct"
+    },
+    {
+      "id": "Q22",
+      "text": "Do we know which lock the cabinet key fits?",
+      "split": "holdout",
+      "intent": {
+        "subjects": [
+          "key"
+        ],
+        "predicate": "opens"
+      },
+      "expected_evidence": [
+        "OBJ-0010/EVID-002"
+      ],
+      "expected_claims": [
+        "OBJ-0010/CLM-002"
+      ],
+      "expected_mode": "Unknown"
+    },
+    {
+      "id": "Q23",
+      "text": "Where is Grandmother’s blue bird after the corrected move?",
+      "split": "holdout",
+      "intent": {
+        "subjects": [
+          "bird"
+        ],
+        "predicate": "location",
+        "valid_at": "2025-01-01"
+      },
+      "expected_evidence": [
+        "OBJ-0001/EVID-008"
+      ],
+      "expected_claims": [
+        "OBJ-0001/CLM-008"
+      ],
+      "expected_mode": "Direct"
+    },
+    {
+      "id": "Q24",
+      "text": "In what year did the lake pebble enter the display?",
+      "split": "holdout",
+      "intent": {
+        "subjects": [
+          "stone"
+        ],
+        "predicate": "acquisition_date"
+      },
+      "expected_evidence": [],
+      "expected_claims": [
+        "DISPLAY-0001/CLM-005"
+      ],
+      "expected_mode": "Unknown"
+    }
+  ]
+}
